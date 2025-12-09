@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Thomas Truffier-Blanc</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="overlay" class="overlay"></div>
+
+    <aside id="side-panel" class="side-panel glass">
+        <button id="close-btn" class="close-btn">&times;</button>
+        <div class="panel-content">
+            <div id="panel-header">
+                <h2 id="panel-title">Titre</h2>
+                <span id="panel-date" class="highlight">Date</span>
+                <p id="panel-location">Lieu</p>
+            </div>
+            <hr class="panel-divider">
+            <div id="panel-body">
+                </div>
+            <div class="panel-footer">
+                <a href="#" class="btn secondary small">Voir document / Code</a>
+            </div>
+        </div>
+    </aside>
+
+    <nav class="navbar">
+        <div class="logo">TTB.</div>
+        <ul class="nav-links">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#formation">Formation</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li><li><a href="#interests">Loisirs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="tag">Étudiant BUT R&T</span>
+            <h1>Thomas <br> <span class="highlight">Truffier-Blanc</span></h1>
+            <p>Étudiant en 1ère année de BUT Réseaux et Télécommunications à l'IUT d'Aubière.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn primary">Me contacter</a>
+                <a href="files/cv Thomas TB.pdf" class="btn secondary"><i class="fas fa-download"></i> Télécharger CV</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <div class="img-container">
+                <img src="https://via.placeholder.com/400" alt="Thomas Truffier-Blanc">
+            </div>
+            <div class="circle-bg"></div>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2 class="section-title">À Propos</h2>
+        <div class="card glass">
+            <p>J'ai 17 ans et je réside actuellement à Clermont-Ferrand. Depuis 10 ans, j'ai eu la chance de vivre dans différents endroits, notamment en Nouvelle-Calédonie où j'ai effectué mon collège et lycée, avant de terminer ma terminale en France métropolitaine.</p>
+        </div>
+    </section>
+
+    <section id="formation" class="container">
+        <h2 class="section-title">Parcours & Formation</h2>
+        <p style="text-align:center; color: var(--text-muted); margin-bottom: 30px;"></p>
+        
+        <div class="timeline">
+            <div class="timeline-item" data-id="iut">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass clickable">
+                    <h3>BUT Réseaux et Télécommunications</h3>
+                    <span class="date">Septembre 2025 - Présent</span>
+                    <p>IUT Clermont Auvergne - Site d'Aubière (63).</p>
+                    <span class="click-hint"><i class="fas fa-plus-circle"></i> En savoir plus</span>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-id="bac">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass clickable">
+                    <h3>Baccalauréat Général</h3>
+                    <span class="date">Décembre 2024 - Juin 2025</span>
+                    <p>Lycée François Mauriac, Andrézieux-Bouthéon.</p>
+                    <span class="click-hint"><i class="fas fa-plus-circle"></i> En savoir plus</span>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-id="om">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass clickable">
+                    <h3>Scolarité en Outre-mer</h3>
+                    <span class="date">Octobre 2015 - Décembre 2024</span>
+                    <p>Primaire, Collège et Lycée entre Tahiti et la Nouvelle-Calédonie.</p>
+                    <span class="click-hint"><i class="fas fa-plus-circle"></i> En savoir plus</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container">
+        <h2 class="section-title">Mes Compétences</h2>
+        <div class="skills-controls">
+            <button class="btn-filter active" data-filter="tech">Techniques</button>
+            <button class="btn-filter" data-filter="human">Humaines & Langues</button>
+        </div>
+
+        <div class="skills-grid" id="tech-skills">
+            <div class="skill-card glass">
+                <i class="fas fa-network-wired"></i>
+                <h3>Réseaux</h3>
+                <p>Configuration point d'accès, Plan d'adressage IP</p>
+            </div>
+            <div class="skill-card glass">
+                <i class="fas fa-wave-square"></i>
+                <h3>Télécoms</h3>
+                <p>Oscilloscope, Générateur de tension</p>
+            </div>
+            <div class="skill-card glass">
+                <i class="fas fa-code"></i>
+                <h3>Programmation</h3>
+                <p>Python, HTML, CSS</p>
+            </div>
+        </div>
+
+        <div class="skills-grid hidden" id="human-skills">
+            <div class="skill-card glass">
+                <i class="fas fa-user-check"></i>
+                <h3>Qualités</h3>
+                <p>Adaptable, Organisation, Patience</p>
+            </div>
+            <div class="skill-card glass">
+                <i class="fas fa-language"></i>
+                <h3>Anglais</h3>
+                <p>Niveau B2</p>
+            </div>
+            <div class="skill-card glass">
+                <i class="fas fa-comment-dots"></i>
+                <h3>Espagnol</h3>
+                <p>Niveau scolaire</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2 class="section-title">Mes Projets</h2>
+        
+        <div class="carousel-wrapper">
+            <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+            
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    
+                    <div class="project-card glass clickable" data-id="whitesentinel">
+                        <div class="project-img-placeholder" style="background: linear-gradient(45deg, #3b82f6, #0f172a);">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>WhiteSentinel</h3>
+                            <p>Station blanche de sécurité</p>
+                            <span class="click-hint small"><i class="fas fa-eye"></i> Voir détails</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass clickable" data-id="autotech">
+                        <div class="project-img-placeholder" style="background: linear-gradient(45deg, #f97316, #0f172a);">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Map.NC</h3>
+                            <p>Site web & Database</p>
+                            <span class="click-hint small"><i class="fas fa-eye"></i> Voir détails</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass clickable" data-id="portfolio">
+                        <div class="project-img-placeholder" style="background: linear-gradient(45deg, #10b981, #0f172a);">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Portfolio V1</h3>
+                            <p>Développement Web Front-End</p>
+                            <span class="click-hint small"><i class="fas fa-eye"></i> Voir détails</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass clickable" data-id="config_cisco">
+                        <div class="project-img-placeholder" style="background: linear-gradient(45deg, #6366f1, #0f172a);">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Projet Intégratif</h3>
+                            <p>Routing & Switching</p>
+                            <span class="click-hint small"><i class="fas fa-eye"></i> Voir détails</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <section id="interests" class="container">
+        <h2 class="section-title">Centres d'intérêt</h2>
+        <div class="interests-grid">
+            <div class="interest-item glass">
+                <i class="fas fa-dumbbell"></i>
+                <div><h4>Sport</h4><p>Judo (7 ans), Squash (4 ans)</p></div>
+            </div>
+            <div class="interest-item glass">
+                <i class="fas fa-water"></i>
+                <div><h4>Activités</h4><p>Plongée en bouteille (club)</p></div>
+            </div>
+            <div class="interest-item glass">
+                <i class="fas fa-music"></i>
+                <div><h4>Musique</h4><p>Guitare, Jeux vidéo</p></div>
+            </div>
+            <div class="interest-item glass">
+                <i class="fas fa-plane-departure"></i>
+                <div><h4>Voyages</h4><p>États-Unis, Océanie</p></div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h2>Me Contacter</h2>
+            <div class="contact-info glass" style="display: inline-block; text-align: left; margin-top: 20px;">
+                <p><i class="fas fa-map-marker-alt"></i> 48 Rue Pablo Picasso, Clermont Ferrand, 63000</p>
+                <p><i class="fas fa-envelope"></i> Thomas.TRUFFIER-BLANC@etu.uca.fr</p>
+                <p><i class="fas fa-phone"></i> 06 11 09 23 09</p>
+            </div>
+            <p class="copyright" style="margin-top: 30px;">© 2025 Thomas Truffier-Blanc.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
