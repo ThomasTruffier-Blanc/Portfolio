@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </ul>
 
                 <h4>Résultat</h4>
-                <p>Plateforme web opérationnelle facilitant la circulation de l'information critique en période de crise.</p>
+                <p>Plateforme web opérationnelle facilitant la circulation de l'information critique durant la période de crise qui a touché la Nouvelle-Calédonie.</p>
             `
         },
         "portfolio": {
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p>Projet réalisé dans le cadre d'un apprentissage personnel sur le développement mobile et l'administration réseau.</p>
 
                 <div style="margin: 20px 0; text-align: center;">
-                    <img src="image/app.png" class="zoomable" alt="Interface Net ToolBox" 
+                    <img src="image/App.png" class="zoomable" alt="Interface Net ToolBox" 
                          style="width: 100%; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); cursor: zoom-in;">
                     <p style="font-size: 0.8rem; color: #94a3b8; margin-top: 5px;">(Cliquez pour agrandir)</p>
                 </div>
@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </ul>
 
                 <h4>Résultat</h4>
-                <p>Application fonctionnelle permettant des tests réseaux rapides. Compétences acquises en Java, cycle de vie Android et gestion des Sockets TCP.</p>
+                <p>Application fonctionnelle permettant des tests réseaux rapides. Compétences acquises en Java, et possibilité par exemple d'allumer mon PC à distance.</p>
             `
         }
     };
