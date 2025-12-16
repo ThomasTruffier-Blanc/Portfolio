@@ -57,9 +57,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h4>Objectif de la Formation</h4>
                 <p>Le BUT Réseaux et Télécommunications est une formation en 3 ans, accessible après le baccalauréat. Cette formation vise à former des techniciens supérieurs compétents dans les domaines des réseaux informatiques, des télécommunications et de la cybersécurité.</p>
                 <h4>Pourquoi l'IUT d'Aubière ?</h4>
-                <p>J'ai choisi cette formation pour apprendre les concepts fondamentaux des réseaux, de la sécurité et des télécommunications à travers des cours, des travaux dirigés (TD) et des projets tutorés.</p>
+                <p>J'ai choisi cette formation pour apprendre les concepts fondamentaux des réseaux, de la sécurité et des télécommunications à travers des cours, des travaux dirigés (TD) et des TP.</p>
                 <h4>Et maintenant ?</h4>
-                <p>Je suis actuellement en première année, avec un rythme d'un mois en entreprise et un mois en formation à l'ITSRA.</p>
+                <p>Je suis actuellement en première année.</p>
             `
         },
         "bac": {
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </ul>
 
                 <h4>Résultat</h4>
-                <p>Plateforme web opérationnelle facilitant la circulation de l'information critique durant la période de crise qui a touché la Nouvelle-Calédonie.</p>
+                <p>Plateforme web opérationnelle facilitant la circulation de l'information critique en période de crise.</p>
             `
         },
         "portfolio": {
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p>Projet réalisé dans le cadre d'un apprentissage personnel sur le développement mobile et l'administration réseau.</p>
 
                 <div style="margin: 20px 0; text-align: center;">
-                    <img src="image/App.png" class="zoomable" alt="Interface Net ToolBox" 
+                    <img src="image/app.png" class="zoomable" alt="Interface Net ToolBox" 
                          style="width: 100%; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); cursor: zoom-in;">
                     <p style="font-size: 0.8rem; color: #94a3b8; margin-top: 5px;">(Cliquez pour agrandir)</p>
                 </div>
@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </ul>
 
                 <h4>Résultat</h4>
-                <p>Application fonctionnelle permettant des tests réseaux rapides. Compétences acquises en Java, et possibilité par exemple d'allumer mon PC à distance.</p>
+                <p>Application fonctionnelle permettant des tests réseaux rapides. Compétences acquises en Java, cycle de vie Android et gestion des Sockets TCP.</p>
             `
         }
     };
