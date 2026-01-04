@@ -42,12 +42,6 @@
             <li><a href="#interests">Loisirs</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
 
     <section id="home" class="hero">
         <div class="hero-content">
@@ -72,9 +66,15 @@
         <div class="card glass">
             <p>J'ai 17 ans et je réside actuellement à Clermont-Ferrand. Origianaire de la région Stéphanoise. J'ai vécu 5 ans en Nouvelle-Calédonie et 5 ans à Tahiti où j'ai effectué ma scolarité avant de revenir en métropole pour ma terminale.</p>
             <br>
+<<<<<<< HEAD
+            <p>Ma passion pour le domaine s'est concrétisée en Première grâce à mon professeur de NSI, qui m'a initié à la cybersécurité via un concours de <strong>CTF (Capture The Flag)</strong>. Je m'intéressais déjà à ce sujet mais vraiment c'est ce déclic qui m'a poussé à rejoindre le BUT Réseaux et Télécommunications pour approfondir mes compétences techniques.</p>
+            <br>
+            <p>Aujourd'hui, je souhaite mettre mon adaptabilité, ma patience et mon sens de l'organisation au service d'une équipe. Dans le cadre de ma formation, je suis à la recherche d'un <strong>stage à compter d'avril 2027</strong>.</p>
+=======
             <p>Ma passion pour le domaine de la cybersécurité s'est concrétisée en Première grâce à mon professeur de NSI, qui m'a initié à ce domaine via un concours de <strong>CTF (Capture The Flag)</strong>. Je m'intéressais déjà à ce sujet mais ce concour a vraiment été un déclic qui m'a poussé à rejoindre le BUT Réseaux et Télécommunications pour approfondir mes compétences techniques.</p>
             <br>
             <p>Aujourd'hui, je souhaite mettre mon adaptabilité et mon sérieux au service d'une équipe. Dans le cadre de ma formation, je suis à la recherche d'un <strong>stage à compter d'avril 2027</strong>.</p>
+>>>>>>> 892ba858dbb13dc8666ebc9e08f33020668ad11d
         </div>
     </section>
 
@@ -123,17 +123,19 @@
         </div>
 
         <div class="skills-grid" id="tech-skills">
-            <div class="skill-card glass">
+            <div class="skill-card glass clickable" data-id="network">
                 <i class="fas fa-network-wired"></i>
                 <h3>Réseaux</h3>
                 <p>Configuration point d'accès, Plan d'adressage IP</p>
             </div>
-            <div class="skill-card glass">
+
+            <div class="skill-card glass clickable" data-id="telecom">
                 <i class="fas fa-wave-square"></i>
                 <h3>Télécoms</h3>
                 <p>Oscilloscope, Générateur de tension</p>
             </div>
-            <div class="skill-card glass">
+
+            <div class="skill-card glass clickable" data-id="code">
                 <i class="fas fa-code"></i>
                 <h3>Programmation</h3>
                 <p>Python, HTML, CSS</p>
@@ -221,25 +223,46 @@
         </div>
     </section>
 
-    <section id="interests" class="container">
+   <section id="interests" class="container">
         <h2 class="section-title">Centres d'intérêt</h2>
         <div class="interests-grid">
-            <div class="interest-item glass">
+            
+            <div class="interest-item glass clickable" data-id="sport">
                 <i class="fas fa-dumbbell"></i>
-                <div><h4>Sport</h4><p>Judo (7 ans), Squash (4 ans)</p></div>
+                <div>
+                    <h4>Sport</h4>
+                    <p>Judo (7 ans), Squash (4 ans)</p>
+                    <span class="click-hint small" style="font-size: 1.1rem; color: #38bdf8;"></i> En savoir plus</span>
+                </div>
             </div>
-            <div class="interest-item glass">
+
+            <div class="interest-item glass clickable" data-id="diving">
                 <i class="fas fa-water"></i>
-                <div><h4>Activités</h4><p>Plongée en bouteille (club)</p></div>
+                <div>
+                    <h4>Activités Nautiques</h4>
+                    <p>Plongée en bouteille </p>
+                    <span class="click-hint small" style="font-size: 1.1rem; color: #38bdf8;"></i> En savoir plus</span>
+                </div>
             </div>
-            <div class="interest-item glass">
+
+            <div class="interest-item glass clickable" data-id="music">
                 <i class="fas fa-music"></i>
-                <div><h4>Musique</h4><p>Guitare, Jeux vidéo</p></div>
+                <div>
+                    <h4>Musique & Jeux</h4>
+                    <p>Guitare, Jeux vidéo</p>
+                    <span class="click-hint small" style="font-size: 1.1rem; color: #38bdf8;"></i> En savoir plus</span>
+                </div>
             </div>
-            <div class="interest-item glass">
+
+            <div class="interest-item glass clickable" data-id="travel">
                 <i class="fas fa-plane-departure"></i>
-                <div><h4>Voyages</h4><p>États-Unis, Océanie</p></div>
+                <div>
+                    <h4>Voyages</h4>
+                    <p>États-Unis, Océanie</p>
+                    <span class="click-hint small" style="font-size: 1.1rem; color: #38bdf8;"></i> En savoir plus</span>
+                </div>
             </div>
+
         </div>
     </section>
 
