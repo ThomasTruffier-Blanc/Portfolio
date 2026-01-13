@@ -345,7 +345,7 @@ document.addEventListener('DOMContentLoaded', () => {
             subtitle: "Rigueur & Sang-froid",
             description: `
                 <h4>Plongée en Bouteille</h4>
-                <p>Durant mes années en outre-mers j'ai pratiqué la plongée en club notament pour Tahiti à <strong>Eleuthera</strong>. J'ai ensuite continué cette activité en Nouvelle-Calédonie de façon occasionnelle. C'est une activité qui exige un grand calme, une gestion stricte des protocoles de sécurité et une confiance totale en son binôme. Elle m'a appris à gérer mon stress dans un environnement hostile pour l'homme.</p>
+                <p>Durant mes années en outre-mers j'ai pratiqué la plongée en club notament pour Tahiti dans le club <strong>Eleuthera Diving</strong>. J'ai ensuite continué cette activité en Nouvelle-Calédonie de façon occasionnelle. C'est une activité qui exige un grand calme, une gestion stricte des protocoles de sécurité et une confiance totale en son binôme. Elle m'a appris à gérer mon stress dans un environnement hostile pour l'homme.</p>
             `
         },
         "music": {
@@ -363,7 +363,7 @@ document.addEventListener('DOMContentLoaded', () => {
             subtitle: "Ouverture Culturelle",
             description: `
                 <h4>Océanie</h4>
-                <p>Ayant vécu 10 ans en Océanie (Nouvelle-Calédonie, Tahiti), j'ai développé une grande curiosité pour les cultures locales.</p>
+                <p>Ayant vécu 10 ans en Océanie (Nouvelle-Calédonie, Tahiti), j'ai développé une grande curiosité pour les cultures locales. J'ai par exemple pu donc voyager en Nouvelle-Zélande ou bien en Australie.</p>
                 <h4>États-Unis</h4>
                 <p>J'ai eu la chance de visiter de nombreux états américains, ce qui a renforcé mon niveau d'anglais et mon autonomie en milieu étranger.</p>
             `
