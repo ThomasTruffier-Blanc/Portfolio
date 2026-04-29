@@ -332,6 +332,14 @@
         gap: 10px;
         padding: 1rem 2rem;
     }
+    .interests-grid:hover {
+        border-color: var(--primary);
+        transform: translateY(-10px);
+    }
+    .interests-item:hover {
+        border-color: var(--primary);
+        transform: translateY(-10px);
+    }
 
     /* Footer */
     footer {
@@ -499,7 +507,7 @@
     .skill-card i { font-size: 2.5rem; color: var(--secondary); margin-bottom: 15px; }
 
     /* Interests & Contact */
-    .interests-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .interests-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 20px; ;}
     .interest-item { display: flex; align-items: flex-start; gap: 15px; }
     .interest-item i { font-size: 1.5rem; color: var(--primary); margin-top: 5px; }
     .contact-info p { margin: 10px 0; font-size: 1.1rem; }
