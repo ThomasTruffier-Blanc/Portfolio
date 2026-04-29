@@ -179,6 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     Projet réalisé dans le cadre de ma formation au cours du deuxième semestre, 
                     dans une matière dédiée aux projets. Celui-ci portait sur l’analyse de 
                     vulnérabilités au sein d’une application web, avec une approche orientée cybersécurité.
+                    Ce projet à durer 1 mois.
                 </p>
 
                 <h4>Objectif</h4>
@@ -186,6 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     L’objectif était de comprendre le fonctionnement des failles de sécurité web 
                     et de savoir les exploiter, notamment les injections SQL, afin d’identifier 
                     les risques associés et d’appliquer les bonnes pratiques de sécurisation.
+                    Mais aussi la création d'une plateforme web vulnérable pour illustrer les failles et leurs corrections, ainsi que la rédaction d’un rapport d’audit structuré présentant les vulnérabilités identifiées.
                 </p>
 
                 <h4>Travail réalisé</h4>
@@ -367,7 +369,37 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 </div>
             `
-        }
+        },
+        "telephony": {
+    title: "Téléphonie IP",
+    subtitle: "VoIP & Communications",
+    description: `
+        <h4>Description</h4>
+        <p>
+            Dans le cadre des travaux pratiques de téléphonie, j’ai mis en place une infrastructure 
+            complète de VoIP basée sur Xivo (Asterisk). Ce projet consistait à reproduire le 
+            fonctionnement d’un système téléphonique d’entreprise en configurant différents types 
+            de terminaux et services.
+        </p>
+
+        <p>
+            J’ai configuré des téléphones SIP (deskphones et softphone), un téléphone DECT via une 
+            borne, ainsi qu’un téléphone analogique à l’aide d’un adaptateur ATA. L’ensemble des 
+            équipements a été relié à un serveur d’appel permettant la gestion des communications.
+        </p>
+
+        <p>
+            J’ai également mis en place un trunk SIP afin de simuler une connexion avec un opérateur, 
+            permettant de gérer les appels entrants et sortants entre différentes infrastructures.
+        </p>
+
+        <p>
+            Enfin, j’ai configuré plusieurs fonctionnalités avancées telles que les groupes d’appel, 
+            le renvoi d’appel, la messagerie vocale, les conférences ainsi que l’assistant Xivo, 
+            permettant une gestion centralisée des communications.
+        </p>
+    `
+},
     };
 
     // --- DONNÉES LOISIRS (INTÉRÊTS) ---
