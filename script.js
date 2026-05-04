@@ -214,6 +214,31 @@ document.addEventListener('DOMContentLoaded', () => {
                 </p>
             `
         },
+        "sae22": {
+            title: "SAE22 – Math Lab",
+            subtitle: "Projet en cours ",
+            description: `
+                <h4>Contexte</h4>
+                <p>
+                    <!-- À compléter --> 
+                </p>
+                
+                <h4>Objectif</h4>
+                <p>
+                    <!-- À compléter -->
+                </p>
+                
+                <h4>Travail réalisé</h4>
+                <p>
+                    <!-- À compléter -->
+                </p>
+                
+                <h4>Résultat</h4>
+                <p>
+                    <!-- À compléter -->
+                </p>
+            `
+        },
     };
 
     // --- DONNÉES COMPÉTENCES (QUALITÉS + TECHNIQUES AVEC ACCORDÉON) ---
@@ -371,35 +396,58 @@ document.addEventListener('DOMContentLoaded', () => {
             `
         },
         "telephony": {
-    title: "Téléphonie IP",
-    subtitle: "VoIP & Communications",
-    description: `
-        <h4>Description</h4>
-        <p>
-            Dans le cadre des travaux pratiques de téléphonie, j’ai mis en place une infrastructure 
-            complète de VoIP basée sur Xivo (Asterisk). Ce projet consistait à reproduire le 
-            fonctionnement d’un système téléphonique d’entreprise en configurant différents types 
-            de terminaux et services.
-        </p>
-
-        <p>
-            J’ai configuré des téléphones SIP (deskphones et softphone), un téléphone DECT via une 
-            borne, ainsi qu’un téléphone analogique à l’aide d’un adaptateur ATA. L’ensemble des 
-            équipements a été relié à un serveur d’appel permettant la gestion des communications.
-        </p>
-
-        <p>
-            J’ai également mis en place un trunk SIP afin de simuler une connexion avec un opérateur, 
-            permettant de gérer les appels entrants et sortants entre différentes infrastructures.
-        </p>
-
-        <p>
-            Enfin, j’ai configuré plusieurs fonctionnalités avancées telles que les groupes d’appel, 
-            le renvoi d’appel, la messagerie vocale, les conférences ainsi que l’assistant Xivo, 
-            permettant une gestion centralisée des communications.
-        </p>
-    `
-},
+            title: "Téléphonie IP",
+            subtitle: "VoIP & Communications",
+            description: `
+                <div class="accordion-item">
+                    <div class="accordion-header" style="${accordionStyleHeader}">
+                        Infrastructure VoIP <span style="font-size: 0.8rem;">▼</span>
+                    </div>
+                    <div class="accordion-content" style="${accordionStyleContent}">
+                        <p>
+                            Mise en place d’une infrastructure de téléphonie IP basée sur Xivo (Asterisk), 
+                            simulant un système d’entreprise avec serveur d’appel et terminaux variés.
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="accordion-item">
+                    <div class="accordion-header" style="${accordionStyleHeader}">
+                        Configuration des terminaux <span style="font-size: 0.8rem;">▼</span>
+                    </div>
+                    <div class="accordion-content" style="${accordionStyleContent}">
+                        <p>
+                            Configuration de téléphones SIP (deskphones et softphone), DECT via borne, 
+                            ainsi que d’un téléphone analogique via un adaptateur ATA.
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="accordion-item">
+                    <div class="accordion-header" style="${accordionStyleHeader}">
+                        Trunk SIP & appels <span style="font-size: 0.8rem;">▼</span>
+                    </div>
+                    <div class="accordion-content" style="${accordionStyleContent}">
+                        <p>
+                            Mise en place d’un trunk SIP permettant la gestion des appels entrants et sortants 
+                            et la simulation d’un opérateur téléphonique.
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="accordion-item">
+                    <div class="accordion-header" style="${accordionStyleHeader}">
+                        Services avancés <span style="font-size: 0.8rem;">▼</span>
+                    </div>
+                    <div class="accordion-content" style="${accordionStyleContent}">
+                        <p>
+                            Configuration de services tels que les groupes d’appel, renvoi d’appel, 
+                            messagerie vocale, conférence et assistant Xivo.
+                        </p>
+                    </div>
+                </div>
+            `
+        },
     };
 
     // --- DONNÉES LOISIRS (INTÉRÊTS) ---
