@@ -22,7 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
         nc: "https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?auto=format&fit=crop&q=70&w=1400",
         cyber: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=70&w=1400",
         maths: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=70&w=1400",
-        hackagou: "assets/img/hackagou-logo.svg"
+        hackagou: "assets/img/hackagou-logo.svg",
+        ncAerial: "https://images.unsplash.com/photo-1710881710127-b648ef0b4dc5?auto=format&fit=crop&q=70&w=1400",
+        nettoolbox: "assets/img/nettoolbox-preview.svg"
     };
 
     function accordion(title, content) {
@@ -191,58 +193,110 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         "project-hackagou": {
             title: "HacKagou.NC",
-            meta: "CTF cybersécurité - Nouvelle-Calédonie",
+            meta: "Cybersécurité & Système",
             body: `
-                <img class="panel-image logo" src="${images.hackagou}" alt="Logo HacKagou">
-                <h3>Contexte</h3><p>HacKagou est un événement CTF en Nouvelle-Calédonie. Cette participation a été mon premier contact concret avec des challenges de cybersécurité en équipe.</p>
-                <h3>Travail réalisé</h3><ul><li>Recherche d'indices et de flags dans différents environnements.</li><li>Utilisation de scripts Bash pour automatiser des étapes simples.</li><li>Découverte d'une logique de diagnostic, d'observation et de méthode.</li></ul>
-                <h3>Ce que le projet montre</h3><p>Au-delà du classement, ce projet montre mon intérêt pour la cybersécurité appliquée et ma capacité à apprendre en situation de challenge.</p>
+                <h4>Contexte</h4>
+                <p>En 2023, lorsque j'&eacute;tais scolaris&eacute; en seconde &agrave; Noum&eacute;a, le lyc&eacute;e nous a fait part de l'existence de ce concours et j'ai donc d&eacute;cid&eacute; de m'y inscrire avec deux autres amis.</p>
+                <h4>Objectif</h4>
+                <p>Terminer des d&eacute;fis en retrouvant une cha&icirc;ne de caract&egrave;res dans diff&eacute;rents challenges de cybers&eacute;curit&eacute;.</p>
+                <h4>Travail r&eacute;alis&eacute;</h4>
+                <ul>
+                    <li>Cr&eacute;ation de scripts en Bash pour automatiser des processus.</li>
+                    <li>Utilisation de logiciels de scan d'appareils pour identifier d'&eacute;ventuelles failles.</li>
+                </ul>
+                <h4>R&eacute;sultat</h4>
+                <p>&Eacute;dition 2025 : 32<sup>e</sup> sur 82 &eacute;quipes.</p>
+                <p>&Eacute;dition 2024 : 54<sup>e</sup> sur 88 &eacute;quipes.</p>
+                <p>&Eacute;dition 2023 : 67<sup>e</sup> sur 96 &eacute;quipes.</p>
             `
         },
         "project-mapnc": {
             title: "Map.NC",
-            meta: "Web, données et information locale",
+            meta: "Web & Database",
             body: `
-                <img class="panel-image zoomable" src="${images.nc}" alt="Nouvelle-Calédonie et littoral">
-                <h3>Contexte</h3><p>Projet web réalisé en NSI pour faciliter le partage d'informations locales pendant une période de crise en Nouvelle-Calédonie.</p>
-                <h3>Travail réalisé</h3><ul><li>Interface HTML/CSS/JavaScript.</li><li>Stockage de points avec MySQL.</li><li>Première logique backend en PHP.</li></ul>
-                <h3>Lecture professionnelle</h3><p>Le projet est simple, mais il met en avant une logique utile : organiser des données, les rendre lisibles et penser un usage concret.</p>
+                <h4>Contexte</h4>
+                <p>En 2024, suite aux &eacute;meutes en Nouvelle-Cal&eacute;donie, nous avons cr&eacute;&eacute; avec ma classe un site web pour partager des informations rapides.</p>
+                <img class="panel-image zoomable" src="${images.ncAerial}" alt="Vue a&eacute;rienne de la Nouvelle-Cal&eacute;donie">
+                <h4>Objectif</h4>
+                <p>Carte interactive pour localiser zones sinistr&eacute;es, barrages ou points de ravitaillement.</p>
+                <h4>Travail r&eacute;alis&eacute;</h4>
+                <ul>
+                    <li>D&eacute;veloppement Front-End HTML/CSS/JS.</li>
+                    <li>Base de donn&eacute;es MySQL.</li>
+                    <li>Backend PHP.</li>
+                </ul>
+                <h4>R&eacute;sultat</h4>
+                <p>Le projet a permis d'obtenir une premi&egrave;re interface web capable de centraliser et d'afficher des informations locales. Il m'a surtout permis de relier une interface, une base de donn&eacute;es et un traitement c&ocirc;t&eacute; serveur dans un cas concret.</p>
             `
         },
         "project-portfolio": {
             title: "Portfolio",
-            meta: "GitHub Pages, HTML/CSS/JS",
+            meta: "HTML/CSS/JS & GitHub Pages",
             body: `
-                <img class="panel-image zoomable" src="${images.code}" alt="Développement web sur ordinateur">
-                <h3>Objectif</h3><p>Créer un support clair pour présenter mon parcours, mes compétences et mes projets dans une recherche de stage puis d'alternance.</p>
-                <h3>Travail réalisé</h3><ul><li>Structure responsive en HTML/CSS/JavaScript.</li><li>Publication sur GitHub Pages.</li><li>Refonte visuelle vers une identité plus infrastructure et réseaux.</li></ul>
+                <h4>Contexte</h4>
+                <p>Projet personnel cr&eacute;&eacute; pour pr&eacute;senter mon parcours, mes comp&eacute;tences, mes projets et mon objectif de recherche de stage en BUT R&eacute;seaux & T&eacute;l&eacute;communications.</p>
+                <img class="panel-image zoomable" src="${images.code}" alt="Interface de code pour le portfolio">
+                <h4>Objectif</h4>
+                <p>Construire un site clair, responsive et professionnel, capable de donner rapidement une image s&eacute;rieuse de mon profil &agrave; un recruteur ou &agrave; une entreprise technique.</p>
+                <h4>Travail r&eacute;alis&eacute;</h4>
+                <ul>
+                    <li>Structuration du site en plusieurs pages : accueil, projets, comp&eacute;tences, passion et contact.</li>
+                    <li>Mise en place d'une identit&eacute; visuelle sobre orient&eacute;e syst&egrave;mes, r&eacute;seaux et cybers&eacute;curit&eacute;.</li>
+                    <li>Ajout de panneaux de d&eacute;tail, animations l&eacute;g&egrave;res, navigation responsive et images adapt&eacute;es.</li>
+                    <li>H&eacute;bergement pr&eacute;vu avec GitHub Pages.</li>
+                </ul>
+                <h4>R&eacute;sultat</h4>
+                <p>Le portfolio sert de support de candidature &eacute;volutif. Il me permet de documenter progressivement mes projets et de montrer mon orientation vers les infrastructures, les r&eacute;seaux et la cybers&eacute;curit&eacute;.</p>
             `
         },
         "project-nettoolbox": {
             title: "Net ToolBox",
-            meta: "Outils réseau et diagnostic",
+            meta: "Réseaux - Routing & Switching",
             body: `
-                <img class="panel-image zoomable" src="${images.switch}" alt="Équipement réseau">
-                <h3>Objectif</h3><p>Regrouper des outils utiles au diagnostic réseau dans une application simple : calcul de sous-réseaux, suivi Wi-Fi et tests de communication.</p>
-                <h3>Intérêt technique</h3><p>Ce projet relie programmation et réseau : il transforme des notions théoriques en outils utilisables pour vérifier une configuration.</p>
+                <h4>Contexte</h4>
+                <p>Projet d'apprentissage personnel sur le d&eacute;veloppement mobile et l'administration r&eacute;seau.</p>
+                <img class="panel-image zoomable" src="${images.nettoolbox}" alt="Interface Net ToolBox">
+                <h4>Objectif</h4>
+                <p>Application centralisant des outils pour le diagnostic r&eacute;seau sur smartphone.</p>
+                <h4>Travail r&eacute;alis&eacute;</h4>
+                <ul>
+                    <li>Interface XML Android Studio.</li>
+                    <li>Calculateur sous-r&eacute;seaux (IP Calc).</li>
+                    <li>Moniteur Wi-Fi temps r&eacute;el.</li>
+                    <li>Client TCP.</li>
+                </ul>
+                <h4>R&eacute;sultat</h4>
+                <p>Le projet a abouti &agrave; une maquette fonctionnelle d'application regroupant plusieurs outils r&eacute;seau. Il m'a permis de mieux comprendre le lien entre d&eacute;veloppement mobile et besoins pratiques d'administration r&eacute;seau.</p>
             `
         },
         "project-sae23": {
-            title: "SAE23 - Audit de sécurité",
-            meta: "Web, SQL, vulnérabilités",
+            title: "SAE23 – Audit de sécurité",
+            meta: "Cybersécurité & Web",
             body: `
-                <img class="panel-image zoomable" src="${images.cyber}" alt="Cybersécurité et circuit numérique">
-                <h3>Objectif</h3><p>Comprendre une vulnérabilité web, l'exploiter dans un cadre pédagogique, puis expliquer la correction et les bonnes pratiques.</p>
-                <h3>Résultat</h3><p>Une application PHP/MySQL volontairement vulnérable, une démonstration d'injection SQL et un rapport d'audit structuré.</p>
+                <h4>Contexte</h4>
+                <p>Projet r&eacute;alis&eacute; dans le cadre de ma formation au cours du deuxi&egrave;me semestre, dans une mati&egrave;re d&eacute;di&eacute;e aux projets. Celui-ci portait sur l'analyse de vuln&eacute;rabilit&eacute;s au sein d'une application web, avec une approche orient&eacute;e cybers&eacute;curit&eacute;.</p>
+                <h4>Objectif</h4>
+                <p>L'objectif &eacute;tait de comprendre le fonctionnement des failles de s&eacute;curit&eacute; web et de savoir les exploiter, notamment les injections SQL, afin d'identifier les risques associ&eacute;s et d'appliquer les bonnes pratiques de s&eacute;curisation.</p>
+                <h4>Travail r&eacute;alis&eacute;</h4>
+                <p>Ce projet a &eacute;t&eacute; r&eacute;alis&eacute; <strong>individuellement</strong>. J'ai d&eacute;velopp&eacute; une application web en PHP/MySQL servant de support &agrave; l'analyse des vuln&eacute;rabilit&eacute;s. Un syst&egrave;me de connexion volontairement vuln&eacute;rable a d'abord &eacute;t&eacute; mis en place, puis s&eacute;curis&eacute; afin d'illustrer les bonnes pratiques. J'ai &eacute;galement exploit&eacute; une injection SQL pour d&eacute;montrer concr&egrave;tement la faille. Enfin, j'ai r&eacute;dig&eacute; un rapport d'audit structur&eacute; pr&eacute;sentant les vuln&eacute;rabilit&eacute;s identifi&eacute;es sous forme de tableau.</p>
+                <p>Le travail a &eacute;t&eacute; r&eacute;alis&eacute; progressivement, en suivant les diff&eacute;rents volets propos&eacute;s par l'enseignant, ce qui m'a permis d'aborder chaque aspect du projet de mani&egrave;re approfondie et structur&eacute;e.</p>
+                <h4>R&eacute;sultat</h4>
+                <p>Le projet a abouti &agrave; une application fonctionnelle int&eacute;grant &agrave; la fois des vuln&eacute;rabilit&eacute;s et leurs corrections. Il m'a permis de d&eacute;velopper une compr&eacute;hension concr&egrave;te des failles web ainsi que des bonnes pratiques essentielles en mati&egrave;re de s&eacute;curit&eacute; des applications.</p>
             `
         },
         "project-sae22": {
-            title: "SAE22 - Math Lab",
-            meta: "Projet de formation",
+            title: "SAE22",
+            meta: "Projet de formation - en cours",
             body: `
-                <img class="panel-image zoomable" src="${images.maths}" alt="Formules mathématiques et calcul">
-                <h3>Contexte</h3><p>Projet en cours autour de notions mathématiques appliquées à un contexte technique.</p>
-                <h3>Présentation</h3><p>La page sera enrichie avec les objectifs précis, les outils utilisés et les résultats dès que le projet sera plus avancé.</p>
+                <h4>Contexte</h4>
+                <p>Projet de formation encore en cours. Le contenu d&eacute;taill&eacute; sera compl&eacute;t&eacute; lorsque la SAE sera finalis&eacute;e.</p>
+                <img class="panel-image zoomable" src="${images.maths}" alt="Travail math&eacute;matique et calculs">
+                <h4>Objectif</h4>
+                <p>Approfondir des notions techniques et math&eacute;matiques dans le cadre de la formation.</p>
+                <h4>Travail r&eacute;alis&eacute;</h4>
+                <p>Le travail est encore en cours. Les diff&eacute;rentes &eacute;tapes, les outils utilis&eacute;s et les productions seront ajout&eacute;s lorsque la SAE sera suffisamment avanc&eacute;e.</p>
+                <h4>R&eacute;sultat</h4>
+                <p>La SAE n'&eacute;tant pas termin&eacute;e, il n'y a pas encore de r&eacute;sultat final &agrave; pr&eacute;senter. Cette partie sera compl&eacute;t&eacute;e apr&egrave;s finalisation du projet.</p>
             `
         }
     };
