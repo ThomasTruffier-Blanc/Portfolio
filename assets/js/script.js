@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         maths: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=70&w=1400",
         hackagou: "assets/img/hackagou-logo.svg",
         ncAerial: "https://images.unsplash.com/photo-1710881710127-b648ef0b4dc5?auto=format&fit=crop&q=70&w=1400",
-        nettoolbox: "assets/img/nettoolbox-preview.svg"
+        nettoolbox: "assets/img/nettoolbox-preview.png"
     };
 
     function accordion(title, content) {
