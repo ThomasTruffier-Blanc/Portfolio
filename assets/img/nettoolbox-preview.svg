@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Net ToolBox - application de diagnostic reseau</title>
+  <desc id="desc">Illustration d'une application mobile avec outils reseau, sous-reseaux, Wi-Fi et client TCP</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07101d"/>
+      <stop offset="0.55" stop-color="#10223a"/>
+      <stop offset="1" stop-color="#06101b"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#122a45"/>
+      <stop offset="1" stop-color="#081421"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <path d="M0 185h1200M0 365h1200M0 545h1200M180 0v800M420 0v800M660 0v800M900 0v800" stroke="#22415f" stroke-width="2" opacity=".35"/>
+  <circle cx="960" cy="160" r="150" fill="#4ea1ff" opacity=".12"/>
+  <circle cx="270" cy="620" r="180" fill="#38bdf8" opacity=".08"/>
+  <rect x="445" y="85" width="310" height="630" rx="42" fill="#030812" stroke="#5b7898" stroke-width="5"/>
+  <rect x="470" y="125" width="260" height="545" rx="26" fill="url(#screen)" stroke="#203b58"/>
+  <rect x="520" y="101" width="160" height="16" rx="8" fill="#0b1726"/>
+  <text x="505" y="180" fill="#f5f8fc" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800">Net ToolBox</text>
+  <text x="506" y="213" fill="#8fc4ff" font-family="JetBrains Mono, monospace" font-size="18">network diagnostics</text>
+  <rect x="500" y="250" width="200" height="76" rx="14" fill="#122f4e" stroke="#4ea1ff" stroke-width="2"/>
+  <text x="528" y="294" fill="#f5f8fc" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">IP Calc</text>
+  <path d="M632 291h42M653 270v42" stroke="#8fc4ff" stroke-width="6" stroke-linecap="round"/>
+  <rect x="500" y="350" width="200" height="76" rx="14" fill="#10253e" stroke="#315c85" stroke-width="2"/>
+  <text x="528" y="394" fill="#f5f8fc" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">Wi-Fi Monitor</text>
+  <path d="M636 399a35 35 0 0 1 49 0M646 410a20 20 0 0 1 28 0M660 425h1" stroke="#4ea1ff" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <rect x="500" y="450" width="200" height="76" rx="14" fill="#10253e" stroke="#315c85" stroke-width="2"/>
+  <text x="528" y="494" fill="#f5f8fc" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">TCP Client</text>
+  <path d="M637 489h45M660 466v45" stroke="#8fc4ff" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+  <rect x="500" y="550" width="200" height="76" rx="14" fill="#10253e" stroke="#315c85" stroke-width="2"/>
+  <text x="528" y="594" fill="#f5f8fc" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">Routing Lab</text>
+  <g filter="url(#glow)" stroke="#4ea1ff" stroke-width="4" fill="none" opacity=".8">
+    <path d="M260 260c80 40 124 88 190 160"/>
+    <path d="M755 405c76-58 122-90 188-113"/>
+    <path d="M755 565c96 0 170 36 230 105"/>
+  </g>
+  <g fill="#4ea1ff">
+    <circle cx="250" cy="255" r="12"/>
+    <circle cx="950" cy="290" r="12"/>
+    <circle cx="990" cy="675" r="12"/>
+  </g>
+  <g fill="#f5f8fc" font-family="JetBrains Mono, monospace" font-size="22">
+    <text x="120" y="250">192.168.10.0/24</text>
+    <text x="835" y="270">SSID: LAB-RT</text>
+    <text x="845" y="710">TCP : OK</text>
+  </g>
+</svg>
