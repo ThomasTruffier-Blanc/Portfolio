@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compétences de Thomas Truffier-Blanc en réseaux, systèmes, télécommunications, programmation et outils techniques.">
+    <meta name="author" content="Thomas Truffier-Blanc">
+    <meta property="og:title" content="Compétences | Thomas Truffier-Blanc">
+    <meta property="og:description" content="Compétences de Thomas Truffier-Blanc en réseaux, systèmes, télécommunications, programmation et outils techniques.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thomastruffier-blanc.github.io/Portfolio/">
+    <title>Compétences | Thomas Truffier-Blanc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="competences">
+    <div id="overlay" class="overlay"></div>
+    <aside id="side-panel" class="side-panel" aria-hidden="true">
+        <button id="close-btn" class="close-btn" aria-label="Fermer le panneau"><i class="fa-solid fa-xmark"></i></button>
+        <div class="panel-content">
+            <p id="panel-meta" class="panel-meta"></p>
+            <h2 id="panel-title">Détail</h2>
+            <p id="panel-location" class="panel-location"></p>
+            <div id="panel-body" class="panel-body"></div>
+        </div>
+    </aside>
+
+    <header class="site-header">
+        <a href="index.html" class="brand" aria-label="Retour à l'accueil"><span class="brand-mark">TTB</span><span class="brand-text">Portfolio</span></a>
+        <nav class="desktop-nav" aria-label="Navigation principale">
+            <a href="index.html" data-nav="accueil">Accueil</a>
+            <a href="projets.html" data-nav="projets">Projets</a>
+            <a href="competences.html" data-nav="competences">Compétences</a>
+            <a href="passion.html" data-nav="passion">Passion</a>
+            <a href="contact.html" data-nav="contact">Contact</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    </header>
+    <nav class="mobile-nav" aria-label="Navigation mobile">
+        <a href="index.html" data-nav="accueil">Accueil</a>
+        <a href="projets.html" data-nav="projets">Projets</a>
+        <a href="competences.html" data-nav="competences">Compétences</a>
+        <a href="passion.html" data-nav="passion">Passion</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+    </nav>
+
+    <main>
+        <section class="page-hero section-pad">
+            <div class="page-hero-copy reveal"><p class="page-label">Compétences</p><h1>Mes Compétences</h1><p>Une présentation structurée de mes bases actuelles en réseaux, systèmes, télécommunications, programmation et outils. Les contenus sont volontairement précis pour montrer mon niveau réel et ma progression.</p></div>
+            <figure class="page-hero-media reveal"><img src="https://images.unsplash.com/photo-1600267165477-6d4cc741b379?auto=format&fit=crop&q=70&w=1600" alt="Switch réseau et câbles Ethernet"></figure>
+        </section>
+        <section id="skills" class="section-pad content-section">
+            <div class="skills-controls reveal" role="tablist" aria-label="Filtres de compétences"><button class="btn-filter active" data-filter="tech" type="button">Techniques</button><button class="btn-filter" data-filter="human" type="button">Humaines & Langues</button></div>
+            <div class="skills-grid" id="tech-skills">
+                <article class="skill-card reveal detail-trigger" data-detail="skill-network" tabindex="0" role="button"><img src="https://images.unsplash.com/photo-1600267165477-6d4cc741b379?auto=format&fit=crop&q=70&w=1200" alt="Équipement réseau"><i class="fa-solid fa-network-wired"></i><h3>Réseaux</h3><p>Compréhension progressive des architectures IP, de la segmentation et du diagnostic réseau.</p><ul class="skill-list"><li>TCP/IP et plan IPv4</li><li>Wireshark et analyse de paquets</li><li>Bases Cisco, VLAN, Wi-Fi</li></ul></article>
+                <article class="skill-card reveal detail-trigger" data-detail="skill-system" tabindex="0" role="button"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=70&w=1200" alt="Serveurs en datacenter"><i class="fa-solid fa-server"></i><h3>Systèmes</h3><p>Travail sur les environnements Linux et Windows, avec une logique d'administration et de tests isolés.</p><ul class="skill-list"><li>Linux et ligne de commande</li><li>Windows et postes clients</li><li>VirtualBox pour les labs</li></ul></article>
+                <article class="skill-card reveal detail-trigger" data-detail="skill-telecom" tabindex="0" role="button"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=70&w=1200" alt="Carte Électronique"><i class="fa-solid fa-wave-square"></i><h3>Télécommunications</h3><p>Découverte des signaux, des mesures et des bases VoIP/SIP dans le cadre de la formation.</p><ul class="skill-list"><li>Oscilloscope et GBF</li><li>Mesure de fréquence</li><li>Bases VoIP et SIP</li></ul></article>
+                <article class="skill-card reveal detail-trigger" data-detail="skill-telephony" tabindex="0" role="button"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=70&w=1200" alt="Interface de communication sur ordinateur"><i class="fa-solid fa-phone-volume"></i><h3>Téléphonie IP</h3><p>Mise en place et configuration de services VoIP dans une logique d'infrastructure d'entreprise.</p><ul class="skill-list"><li>Xivo et Asterisk</li><li>Téléphones SIP et softphones</li><li>Trunk SIP, appels et services</li></ul></article>
+                <article class="skill-card reveal detail-trigger" data-detail="skill-code" tabindex="0" role="button"><img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&q=70&w=1200" alt="Code sur Écran"><i class="fa-solid fa-code"></i><h3>Programmation</h3><p>Utilisation du code comme outil d'automatisation, de documentation et de petits projets techniques.</p><ul class="skill-list"><li>Python pour scripts simples</li><li>Bash pour automatiser</li><li>HTML/CSS pour interfaces</li></ul></article>
+                <article class="skill-card reveal detail-trigger" data-detail="skill-tools" tabindex="0" role="button"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=70&w=1200" alt="Infrastructure réseau"><i class="fa-solid fa-screwdriver-wrench"></i><h3>Outils</h3><p>Outils utilisés pour apprendre, simuler, versionner et présenter des projets de manière professionnelle.</p><ul class="skill-list"><li>Git et GitHub</li><li>Packet Tracer</li><li>Documentation de projet</li></ul></article>
+            </div>
+            <div class="skills-grid hidden" id="human-skills">
+                <article class="skill-card reveal detail-trigger" data-detail="skill-qualities" tabindex="0" role="button"><img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=70&w=1200" alt="Réunion professionnelle"><i class="fa-solid fa-user-check"></i><h3>Qualités professionnelles</h3><p>Méthode, autonomie encadrée, communication claire et capacité à documenter un travail technique.</p><ul class="skill-list"><li>Diagnostic progressif</li><li>Organisation des tâches</li><li>Travail en groupe</li></ul></article>
+                <article class="skill-card reveal"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=70&w=1200" alt="Étudiants travaillant ensemble"><i class="fa-solid fa-language"></i><h3>Anglais</h3><p>Niveau B2. Utile pour lire de la documentation technique, comprendre des interfaces d'outils et suivre des ressources réseau/cyber.</p><ul class="skill-list"><li>Documentation technique</li><li>Vocabulaire informatique</li><li>Compréhension écrite</li></ul></article>
+                <article class="skill-card reveal"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=70&w=1200" alt="Discussion professionnelle"><i class="fa-solid fa-comment-dots"></i><h3>Espagnol</h3><p>Niveau scolaire. Base de communication et de compréhension dans un contexte général.</p><ul class="skill-list"><li>échanges simples</li><li>Compréhension générale</li><li>Culture linguistique</li></ul></article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Thomas Truffier-Blanc</p>
+        <a href="contact.html">Contact</a>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
