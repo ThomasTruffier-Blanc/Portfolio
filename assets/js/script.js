@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         maths: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=70&w=1400",
         hackagou: "assets/img/hackagou-logo.svg",
         ncAerial: "https://images.unsplash.com/photo-1710881710127-b648ef0b4dc5?auto=format&fit=crop&q=70&w=1400",
-        nettoolbox: "assets/img/nettoolbox-preview.png"
+        nettoolbox: "assets/img/nettoolbox-preview.svg"
     };
 
     function accordion(title, content) {
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
             body: `
                 <img class="panel-image zoomable" src="${images.code}" alt="Poste de travail avec code">
                 <h3>Spécialités</h3>
-                <p>Mathématiques et Numérique et Sciences de l'Informatique, avec une première approche structurée de l'algorithmique, de Python, des bases de données et du web.</p>
+                <p>Mathématiques et Numérique et Sciences de l'Informatique, avec une première approche structurée de l'algorithmique, de Python, des bases de données et du web. Baccalauréat obtenu avec la mention Bien.</p>
                 <h3>Apport pour le BUT RT</h3>
                 <p>La NSI m'a donné des bases utiles pour comprendre les scripts, les services web et les notions de sécurité applicative abordées ensuite en formation.</p>
             `
@@ -69,11 +69,11 @@ document.addEventListener("DOMContentLoaded", () => {
         "formation-outremer": {
             title: "Scolarité en Outre-mer",
             meta: "2015 - 2024",
-            location: "Nouvelle-Calédonie et Tahiti",
+            location: "Nouvelle-Calédonie et Polynésie",
             body: `
                 <img class="panel-image zoomable" src="${images.nc}" alt="Paysage côtier en Nouvelle-Calédonie">
                 <h3>Parcours</h3>
-                <p>J'ai vécu plusieurs années en Nouvelle-Calédonie et à Tahiti avant de revenir en métropole. Ce parcours m'a habitué à changer d'environnement et à m'intégrer dans des contextes différents.</p>
+                <p>J'ai vécu plusieurs années en Nouvelle-Calédonie et en Polynésie avant de revenir en métropole. Ce parcours m'a habitué à changer d'environnement et à m'intégrer dans des contextes différents.</p>
                 <h3>Apport personnel</h3>
                 <p>Cette expérience me sert aujourd'hui dans le travail en groupe, l'adaptation aux nouvelles méthodes et la communication avec des profils variés.</p>
             `
@@ -240,7 +240,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p>Construire un site clair, responsive et professionnel, capable de donner rapidement une image s&eacute;rieuse de mon profil &agrave; un recruteur ou &agrave; une entreprise technique.</p>
                 <h4>Travail r&eacute;alis&eacute;</h4>
                 <ul>
-                    <li>Structuration du site en plusieurs pages : accueil, projets, comp&eacute;tences, passion et contact.</li>
+                    <li>Structuration du site en plusieurs pages : accueil, projets, comp&eacute;tences, passions et contact.</li>
                     <li>Mise en place d'une identit&eacute; visuelle sobre orient&eacute;e syst&egrave;mes, r&eacute;seaux et cybers&eacute;curit&eacute;.</li>
                     <li>Ajout de panneaux de d&eacute;tail, animations l&eacute;g&egrave;res, navigation responsive et images adapt&eacute;es.</li>
                     <li>H&eacute;bergement pr&eacute;vu avec GitHub Pages.</li>
