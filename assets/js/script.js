@@ -270,7 +270,7 @@ document.addEventListener("DOMContentLoaded", () => {
             `
         },
         "project-sae23": {
-            title: "SAE23 – Audit de sécurité",
+            title: "CyberSkills – Audit de sécurité",
             meta: "Cybersécurité & Web",
             body: `
                 <h4>Contexte</h4>
@@ -285,7 +285,7 @@ document.addEventListener("DOMContentLoaded", () => {
             `
         },
         "project-sae22": {
-            title: "SAE22",
+            title: "MathLab",
             meta: "Projet de formation - en cours",
             body: `
                 <h4>Contexte</h4>
