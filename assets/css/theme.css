@@ -139,6 +139,8 @@ a, button, [role="button"] { -webkit-tap-highlight-color: transparent; }
 .panel-content h2 { font-weight: 650; }
 .close-btn { z-index: 2; background: #fff; color: var(--text); box-shadow: 0 2px 12px #183c301a; }
 .panel-image { max-height: 350px; object-fit: contain; }
+.timeline-card img.institution-logo, .panel-image.institution-logo { object-fit: contain; padding: 20px; background: #fff; }
+.page-hero-media img.technical-capture, .skill-card img.technical-capture { object-fit: contain; background: #e5ebe7; }
 .accordion-item { background: #f5f7f6; }
 .accordion-header { color: var(--text); }
 .project-captures figcaption { font-size: .9rem; }

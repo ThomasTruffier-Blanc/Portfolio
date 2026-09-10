@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
             meta: "Septembre 2025 - présent",
             location: "IUT Clermont Auvergne - Site d'Aubière",
             body: `
-                <img class="panel-image zoomable" src="${images.server}" alt="Baies de serveurs et câblage réseau">
+                <img class="panel-image zoomable institution-logo" src="assets/img/iut-clermont-auvergne.png" alt="Logo officiel de l’IUT Clermont Auvergne" loading="lazy">
                 <h3>Orientation</h3>
                 <p>Cette formation me permet de construire un profil technique centré sur les réseaux, les systèmes, les télécommunications et la cybersécurité. Les travaux pratiques m'aident à relier la théorie à des configurations concrètes.</p>
                 <h3>Compétences travaillées</h3>
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Réseaux",
             meta: "TCP/IP, IPv4, Wireshark, Cisco, VLAN",
             body: `
-                <img class="panel-image zoomable" src="${images.switch}" alt="Switch réseau et câbles Ethernet">
+                <img class="panel-image zoomable technical-capture" src="assets/img/sae24/topologie-cisco.png" alt="Topologie Cisco du projet SAE 24" loading="lazy">
                 ${accordion("Adressage et architecture", `
                     <p>Je travaille les fondamentaux TCP/IP, le plan d'adressage IPv4, les masques, les sous-réseaux et la logique de segmentation. L'objectif est de savoir lire une architecture simple, repérer les réseaux concernés et expliquer les choix d'adressage.</p>
                     <ul><li>Calcul de sous-réseaux et passerelles.</li><li>Compréhension des flux entre équipements.</li><li>Premières notions de routage et de services réseau.</li></ul>
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Systèmes",
             meta: "Linux, Windows, VirtualBox",
             body: `
-                <img class="panel-image zoomable" src="${images.server}" alt="Infrastructure serveur">
+                <img class="panel-image zoomable technical-capture" src="assets/img/sae24/windows-server.png" alt="Rôles Active Directory, DNS et DHCP dans Windows Server" loading="lazy">
                 ${accordion("Linux", `
                     <p>J'utilise Linux pour comprendre l'administration système, la ligne de commande, les permissions, les services et les scripts Bash. Je cherche à développer une méthode propre pour installer, tester et dépanner.</p>
                     <ul><li>Navigation terminal, droits et processus.</li><li>Scripts Bash simples pour automatiser des tâches.</li><li>Lecture de fichiers de configuration et diagnostic.</li></ul>
@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Téléphonie IP",
             meta: "VoIP & Communications",
             body: `
-                <img class="panel-image zoomable" src="assets/img/editorial/photo-1516321318423-f06f85e504b3.jpg" alt="Poste de travail avec outils de communication">
+                <img class="panel-image zoomable technical-capture" src="assets/img/sae24/xivo.png" alt="Tableau de bord XiVO et services de téléphonie IP" loading="lazy">
                 ${accordion("Infrastructure VoIP", `
                     <p>Mise en place d'une infrastructure de téléphonie IP basée sur Xivo et Asterisk, avec une logique proche d'un système d'entreprise : serveur d'appel, terminaux et services associés.</p>
                 `)}
@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Outils",
             meta: "Git, GitHub, Packet Tracer",
             body: `
-                <img class="panel-image zoomable" src="${images.server}" alt="Poste technique et infrastructure réseau">
+                <img class="panel-image zoomable technical-capture" src="assets/img/sae24/supervision-zabbix.png" alt="Supervision des hôtes du projet dans Zabbix" loading="lazy">
                 ${accordion("Git et GitHub", `
                     <p>Je sais versionner un projet, suivre mes modifications et publier mon travail. GitHub est aussi un support pour présenter mes scripts, projets de formation et exercices techniques.</p>
                 `)}
