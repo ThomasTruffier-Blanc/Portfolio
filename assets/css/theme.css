@@ -35,9 +35,9 @@ a, button, [role="button"] { -webkit-tap-highlight-color: transparent; }
 }
 .hero-backdrop { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 65% center; }
 .hero-section::before { content: ""; position: absolute; z-index: -1; inset: 0; background: linear-gradient(90deg, rgba(8,22,19,.97) 0%, rgba(8,22,19,.88) 36%, rgba(8,22,19,.24) 80%); }
-.hero-copy { max-width: 690px; }
+.hero-copy { position: relative; max-width: 100%; padding-left: 320px; }
 .hero-identity { display: flex; align-items: center; gap: 16px; margin-bottom: 26px; font-size: .83rem; line-height: 1.65; color: #d3e2db; }
-.hero-identity img { width: 58px; height: 58px; object-fit: cover; border-radius: 50%; border: 2px solid #e7f1eb; }
+.hero-identity img { position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 270px; height: 270px; object-fit: cover; border-radius: 8px; border: 2px solid #e7f1eb; }
 .hero-copy h1 { font-size: 64px; line-height: 1.03; font-weight: 650; color: #fff; }
 .hero-copy h1 span { display: block; color: #fff; }
 .hero-kicker { font: 600 .76rem "Segoe UI",sans-serif; text-transform: uppercase; letter-spacing: 0; color: #a5e4c7; margin-bottom: 14px; }
@@ -153,7 +153,8 @@ a, button, [role="button"] { -webkit-tap-highlight-color: transparent; }
   .section-pad { width: calc(100% - 40px); padding: 48px 0; }
   .hero-section { width: 100%; padding: 112px 24px 36px; min-height: 0; }
   .hero-section::before { background: rgba(8,22,19,.82); }
-  .hero-copy { max-width: 620px; }
+  .hero-copy { max-width: 620px; padding-left: 0; }
+  .hero-identity img { position: static; transform: none; width: 160px; height: 160px; flex-shrink: 0; }
   .hero-copy h1 { font-size: 52px; }
   .home-facts { width: calc(100% - 40px); grid-template-columns: repeat(3,minmax(0,1fr)); }
   .home-facts div { padding: 0 14px; }
@@ -173,7 +174,7 @@ a, button, [role="button"] { -webkit-tap-highlight-color: transparent; }
 @media (max-width:540px) {
   .hero-section { padding: 100px 20px 30px; }
   .hero-identity { margin-bottom: 20px; font-size: .73rem; gap: 12px; }
-  .hero-identity img { width: 46px; height: 46px; }
+  .hero-identity img { width: 140px; height: 140px; }
   .hero-copy h1 { font-size: 42px; }
   .hero-role { display: none; }
   .hero-stage { font-size: .93rem; }
