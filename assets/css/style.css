@@ -90,6 +90,12 @@ body.nav-open .mobile-nav { display: flex; }
 .hero-copy h1, .page-hero h1, .contact-copy h1 { margin: 0; max-width: 780px; color: var(--text); font-size: 4.05rem; line-height: 1; font-weight: 820; letter-spacing: 0; }
 .hero-copy h1 span { color: var(--blue-soft); }
 .hero-role, .page-hero-copy p:last-child, .contact-copy p:not(.page-label) { max-width: 680px; margin: 24px 0 0; color: var(--soft); font-size: 1.08rem; }
+.hero-stage { margin: 20px 0 0; padding-left: 16px; border-left: 3px solid var(--blue); color: var(--soft); font-size: 1.08rem; }
+.hero-socials { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 18px; color: var(--muted); font-size: .95rem; }
+.hero-socials a { text-underline-offset: 4px; }
+.hero-socials a:hover { color: var(--text); }
+.hero-copy { min-width: 0; }
+.hero-copy h1 { overflow-wrap: anywhere; }
 .hero-focus { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; padding: 0; list-style: none; }
 .hero-focus li, .music-tags span, .meta-pill { border: 1px solid var(--line); border-radius: var(--radius); padding: 8px 11px; background: rgba(255,255,255,.035); color: var(--soft); font-size: .9rem; font-weight: 700; }
 .hero-actions, .contact-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
@@ -189,6 +195,13 @@ body.nav-open .mobile-nav { display: flex; }
 .panel-body ul { margin: 10px 0 0; padding-left: 22px; }
 .panel-image { width: 100%; max-height: 300px; object-fit: cover; margin: 18px 0; border: 1px solid var(--line); border-radius: var(--radius); cursor: zoom-in; }
 .panel-image.logo { object-fit: contain; padding: 30px; background: #f5f8fc; }
+.project-card img.sae24-preview { object-fit: contain; background: #999; }
+.project-captures { display: grid; gap: 24px; margin: 18px 0; }
+.project-captures figure { min-width: 0; margin: 0; }
+.project-capture-zoom { display: block; width: 100%; padding: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); cursor: zoom-in; }
+.project-capture-zoom img { display: block; width: 100%; height: auto; }
+.project-capture-zoom:focus-visible { outline: 2px solid var(--blue-soft); outline-offset: 4px; }
+.project-captures figcaption { margin-top: 10px; color: var(--soft); font-size: .9rem; line-height: 1.6; }
 .accordion-item { margin-top: 14px; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: rgba(255,255,255,.03); }
 .accordion-header { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 16px; border: 0; background: transparent; color: var(--text); cursor: pointer; font-weight: 750; text-align: left; }
 .accordion-header i { color: var(--blue-soft); transition: transform 180ms ease; }

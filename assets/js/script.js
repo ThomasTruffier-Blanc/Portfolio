@@ -15,16 +15,16 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.prepend(progress);
 
     const images = {
-        server: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=70&w=1400",
-        switch: "https://images.unsplash.com/photo-1600267165477-6d4cc741b379?auto=format&fit=crop&q=70&w=1400",
-        code: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&q=70&w=1400",
-        telecom: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=70&w=1400",
-        nc: "https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?auto=format&fit=crop&q=70&w=1400",
-        cyber: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=70&w=1400",
-        maths: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=70&w=1400",
+        server: "assets/img/editorial/photo-1558494949-ef010cbdcc31.jpg",
+        switch: "assets/img/editorial/photo-1544197150-b99a580bb7a8.jpg",
+        code: "assets/img/editorial/photo-1515879218367-8466d910aaa4.jpg",
+        telecom: "assets/img/editorial/photo-1518770660439-4636190af475.jpg",
+        nc: "assets/img/editorial/photo-1710881710127-b648ef0b4dc5.jpg",
+        cyber: "assets/img/editorial/photo-1550751827-4bd374c3f58b.jpg",
+        maths: "assets/img/editorial/photo-1635070041078-e363dbe005cb.jpg",
         hackagou: "assets/img/hackagou-logo.svg",
-        ncAerial: "https://images.unsplash.com/photo-1710881710127-b648ef0b4dc5?auto=format&fit=crop&q=70&w=1400",
-        nettoolbox: "assets/img/nettoolbox-preview.svg"
+        ncAerial: "assets/img/editorial/photo-1710881710127-b648ef0b4dc5.jpg",
+        nettoolbox: "assets/img/nettoolbox-preview.png"
     };
 
     function accordion(title, content) {
@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Téléphonie IP",
             meta: "VoIP & Communications",
             body: `
-                <img class="panel-image zoomable" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=70&w=1400" alt="Poste de travail avec outils de communication">
+                <img class="panel-image zoomable" src="assets/img/editorial/photo-1516321318423-f06f85e504b3.jpg" alt="Poste de travail avec outils de communication">
                 ${accordion("Infrastructure VoIP", `
                     <p>Mise en place d'une infrastructure de téléphonie IP basée sur Xivo et Asterisk, avec une logique proche d'un système d'entreprise : serveur d'appel, terminaux et services associés.</p>
                 `)}
@@ -185,7 +185,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Qualités professionnelles",
             meta: "Méthode, communication, autonomie",
             body: `
-                <img class="panel-image zoomable" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=70&w=1400" alt="Réunion professionnelle">
+                <img class="panel-image zoomable" src="assets/img/editorial/photo-1517245386807-bb43f82c33c4.jpg" alt="Réunion professionnelle">
                 <h3>Méthode</h3><p>Je travaille par étapes vérifiables : comprendre le problème, tester une hypothèse, documenter le résultat et corriger si nécessaire.</p>
                 <h3>Autonomie encadrée</h3><p>Je sais chercher, expérimenter et avancer seul sur des tâches adaptées à mon niveau, tout en demandant validation lorsque le sujet touche une configuration sensible.</p>
                 <h3>Communication</h3><p>Je fais attention à expliquer ce que j'ai fait avec des mots simples, notamment dans les projets de groupe et les comptes rendus techniques.</p>
@@ -267,6 +267,48 @@ document.addEventListener("DOMContentLoaded", () => {
                 </ul>
                 <h4>R&eacute;sultat</h4>
                 <p>Le projet a abouti &agrave; une maquette fonctionnelle d'application regroupant plusieurs outils r&eacute;seau. Il m'a permis de mieux comprendre le lien entre d&eacute;veloppement mobile et besoins pratiques d'administration r&eacute;seau.</p>
+            `
+        },
+        "project-sae24": {
+            title: "SAE 24 · Projet intégratif",
+            meta: "Lex & Partners · BUT Réseaux & Télécommunications",
+            body: `
+                <h4>Contexte</h4>
+                <p>Projet de groupe réalisé dans le cadre de la SAE 24 : concevoir et déployer l'infrastructure informatique de Lex &amp; Partners, un cabinet d'avocats. Le scénario associe les besoins des utilisateurs, l'administration des serveurs et la protection des ressources internes.</p>
+                <h4>Objectif</h4>
+                <p>Relier les postes, les serveurs et les services dans une architecture cohérente : accès Internet, Wi-Fi, gestion centralisée des comptes, téléphonie IP et supervision. La segmentation du réseau permet de séparer les usages et de contrôler les communications entre les différentes zones.</p>
+                <h4>Réalisations du groupe</h4>
+                <ul>
+                    <li>Réseau Cisco : VLAN, liaisons trunk, routage inter-VLAN, relais DHCP et traduction d'adresses.</li>
+                    <li>Services Windows Server : Active Directory, DNS et DHCP ; services Linux et hébergement web.</li>
+                    <li>Téléphonie IP avec XiVO, configuration des lignes SIP et intégration des terminaux.</li>
+                    <li>Supervision des hôtes avec Zabbix et centralisation des journaux avec Graylog.</li>
+                    <li>Application web PHP/MySQL et script Bash de détection des échecs de connexion, avec envoi d'une alerte vers Graylog.</li>
+                    <li>Compte rendu technique illustré : configurations, choix d'architecture et vérifications.</li>
+                </ul>
+                <h4>Captures du projet</h4>
+                <div class="project-captures">
+                    <figure>
+                        <button class="project-capture-zoom" type="button" aria-label="Agrandir la topologie Cisco">
+                            <img src="assets/img/sae24/topologie-cisco.png" alt="Schéma Cisco avec quatre VLAN, serveurs Windows et Linux, téléphones IP, point d'accès et liaison Internet" loading="lazy">
+                        </button>
+                        <figcaption><strong>Architecture réseau.</strong> La topologie relie les zones serveurs, utilisateurs et Wi-Fi aux équipements de routage et de sécurité.</figcaption>
+                    </figure>
+                    <figure>
+                        <button class="project-capture-zoom" type="button" aria-label="Agrandir la capture Zabbix">
+                            <img src="assets/img/sae24/supervision-zabbix.png" alt="Interface Zabbix présentant les quinze hôtes configurés et leurs indicateurs de disponibilité" loading="lazy">
+                        </button>
+                        <figcaption><strong>Supervision Zabbix.</strong> Quinze hôtes sont configurés pour suivre les serveurs, les services et les équipements réseau. La capture distingue les états de disponibilité des agents et de SNMP.</figcaption>
+                    </figure>
+                    <figure>
+                        <button class="project-capture-zoom" type="button" aria-label="Agrandir la capture Graylog">
+                            <img src="assets/img/sae24/alerte-graylog.png" alt="Recherche Graylog montrant une alerte après cinq tentatives de connexion échouées" loading="lazy">
+                        </button>
+                        <figcaption><strong>Alerte de sécurité Graylog.</strong> Un événement confirme la détection de cinq tentatives de connexion échouées sur l'application web.</figcaption>
+                    </figure>
+                </div>
+                <h4>Résultats et acquis</h4>
+                <p>Le compte rendu rassemble l'architecture, les configurations et les validations des services. Les captures montrent les hôtes ajoutés à Zabbix et la réception d'une alerte applicative dans Graylog. Ce projet met en relation l'administration réseau, les systèmes, le développement web et l'analyse des événements de sécurité.</p>
             `
         },
         "project-sae23": {
@@ -435,9 +477,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     document.addEventListener("click", (event) => {
-        const target = event.target;
+        const captureButton = event.target.closest?.(".project-capture-zoom");
+        const target = captureButton ? captureButton.querySelector("img") : event.target;
         if (!(target instanceof HTMLImageElement)) return;
-        if (!target.matches("[data-lightbox], .zoomable")) return;
+        if (!captureButton && !target.matches("[data-lightbox], .zoomable")) return;
 
         if (lightboxImg) {
             lightboxImg.src = target.src;

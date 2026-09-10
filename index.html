@@ -11,11 +11,9 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://thomastruffier-blanc.github.io/Portfolio/">
     <title>Accueil | Thomas TRUFFIER-BLANC</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
 </head>
 <body data-page="accueil">
     <div id="overlay" class="overlay"></div>
@@ -58,68 +56,61 @@
 
     <main>
         <section id="home" class="hero-section section-pad">
+            <img class="hero-backdrop" src="assets/img/editorial/photo-1544197150-b99a580bb7a8.jpg" alt="Baie de brassage et connexions Ethernet" fetchpriority="high">
             <div class="hero-copy reveal">
-                <p class="hero-kicker">Stage BUT2 recherch&eacute; &agrave; partir d'avril 2027</p>
-                <h1>Thomas <span>TRUFFIER-BLANC</span></h1>
+                <div class="hero-identity"><img src="assets/img/photo.png" alt="Portrait de Thomas Truffier-Blanc" width="64" height="64"><span>BUT 2 R&eacute;seaux &amp; T&eacute;l&eacute;communications<br>IUT Clermont Auvergne &middot; Aubi&egrave;re</span></div>
+                <p class="hero-kicker">Recherche de stage &middot; D&egrave;s avril 2027</p>
+                <h1>Thomas <span>Truffier-Blanc</span></h1>
                 <p class="hero-role">
-                    &Eacute;tudiant en BUT R&eacute;seaux &amp; T&eacute;l&eacute;communications &agrave; l'IUT Clermont Auvergne,
-                    orient&eacute; syst&egrave;mes, r&eacute;seaux et cybers&eacute;curit&eacute;. Je construis un profil technique solide
-                    pour &eacute;voluer dans des environnements d'infrastructure, de t&eacute;l&eacute;communications
-                    et d'administration r&eacute;seau.
+                    &Eacute;tudiant en <strong>BUT 2 R&eacute;seaux &amp; T&eacute;l&eacute;communications</strong>
+                    &agrave; l'IUT Clermont Auvergne.
                 </p>
+                <p class="hero-stage"><strong>Stage syst&egrave;mes, r&eacute;seaux et cybers&eacute;curit&eacute;</strong><br>Disponible &agrave; partir d'<strong>avril 2027</strong>.</p>
+                <div class="hero-actions">
+                    <a href="assets/files/cv Thomas TB.pdf" class="btn btn-primary">
+                        <i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Consulter mon CV
+                    </a>
+                    <a href="contact.html" class="btn btn-secondary">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i> Me contacter
+                    </a>
+                </div>
                 <ul class="hero-focus" aria-label="Axes professionnels">
                     <li>Syst&egrave;mes</li>
                     <li>R&eacute;seaux</li>
                     <li>Cybers&eacute;curit&eacute;</li>
                     <li>T&eacute;l&eacute;communications</li>
                 </ul>
-                <div class="hero-actions">
-                    <a href="assets/files/cv Thomas TB.pdf" class="btn btn-primary">
-                        <i class="fa-solid fa-file-arrow-down"></i> T&eacute;l&eacute;charger CV
-                    </a>
-                    <a href="https://github.com/ThomasTruffier-Blanc" class="btn btn-secondary" target="_blank" rel="noreferrer">
+                <div class="hero-socials">
+                    <a href="https://github.com/ThomasTruffier-Blanc" target="_blank" rel="noreferrer">
                         <i class="fa-brands fa-github"></i> GitHub
                     </a>
-                    <a href="https://www.linkedin.com/in/thomas-truffier-blanc-45b43b355/" class="btn btn-secondary" target="_blank" rel="noreferrer">
+                    <a href="https://www.linkedin.com/in/thomas-truffier-blanc-45b43b355/" target="_blank" rel="noreferrer">
                         <i class="fa-brands fa-linkedin"></i> LinkedIn
                     </a>
                 </div>
-                <div class="signal-row" aria-label="Informations cles">
+            </div>
+        </section>
+                <div class="signal-row home-facts" aria-label="Informations cles">
                     <div>
-                        <strong>BUT RT</strong>
-                        <span>1re ann&eacute;e, parcours vers stage puis alternance.</span>
+                        <strong>01 / Formation</strong>
+                        <span>BUT 2 R&eacute;seaux &amp; T&eacute;l&eacute;communications</span>
                     </div>
                     <div>
-                        <strong>Infra</strong>
+                        <strong>02 / Terrain technique</strong>
                         <span>Linux, IPv4, Wireshark, Cisco, Packet Tracer.</span>
                     </div>
                     <div>
-                        <strong>2027</strong>
+                        <strong>03 / Disponibilit&eacute;</strong>
                         <span>Stage BUT2 disponible &agrave; partir d'avril.</span>
                     </div>
                 </div>
-            </div>
-
-            <div class="hero-visual reveal">
-                <figure class="portrait-frame">
-                    <img src="assets/img/photo.png" alt="Portrait de Thomas TRUFFIER-BLANC">
-                </figure>
-                <figure class="hero-image-card">
-                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=70&w=1600" alt="Infrastructure datacenter et serveurs">
-                </figure>
-                <div class="terminal-mini" aria-label="Profil technique">
-                    <div class="terminal-bar"><span></span><span></span><span></span></div>
-                    <pre><code>$ profil --objectif
-                        formation: BUT_R&amp;T
-                        axes: systemes/reseaux/cyber
-                        stage: avril_2027</code></pre>
-                </div>
-            </div>
-        </section>
 
         <section id="about" class="section-pad content-section">
+            <div class="section-heading reveal"><p>01 / Profil</p><h2>Comprendre. Configurer. Faire fonctionner.</h2></div>
+            <div class="split-grid">
+            <div class="about-copy reveal">
          <p>
-            Je suis &eacute;tudiant en premi&egrave;re ann&eacute;e de BUT R&eacute;seaux &amp; T&eacute;l&eacute;communications
+            Je suis &eacute;tudiant en deuxi&egrave;me ann&eacute;e de BUT R&eacute;seaux &amp; T&eacute;l&eacute;communications
             &agrave; l'IUT Clermont Auvergne, sur le site d'Aubi&egrave;re. Mon objectif est de progresser vers
             des missions li&eacute;es &agrave; l'administration syst&egrave;mes et r&eacute;seaux, &agrave; l'analyse r&eacute;seau,
             &agrave; la s&eacute;curit&eacute; des infrastructures et aux t&eacute;l&eacute;communications.
@@ -146,21 +137,21 @@
             Je recherche un stage en BUT2 &agrave; partir d'avril 2027.
         </p>
     </div>
-                <div class="media-stack reveal">
-                    <img src="https://images.unsplash.com/photo-1600267165477-6d4cc741b379?auto=format&fit=crop&q=70&w=1400" alt="Cablage reseau et switch informatique">
-                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=70&w=1400" alt="Poste de travail avec ordinateur portable">
-                </div>
+                <figure class="about-project reveal">
+                    <img src="assets/img/sae24/topologie-cisco.png" alt="Topologie réseau réalisée pour la SAE 24 Lex &amp; Partners" loading="lazy">
+                    <figcaption><span>SAE 24 &middot; Lex &amp; Partners</span><h3>Des cours &agrave; une infrastructure compl&egrave;te.</h3><p>VLAN, serveurs, t&eacute;l&eacute;phonie IP et supervision : un projet qui relie les diff&eacute;rents domaines de ma formation.</p><a href="projets.html#projects" class="detail-link">D&eacute;couvrir mes projets <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></figcaption>
+                </figure>
             </div>
         </section>
 
         <section id="formation" class="section-pad content-section">
             <div class="section-heading reveal">
-                <p>Parcours</p>
+                <p>02 / Parcours</p>
                 <h2>Parcours &amp; Formation</h2>
             </div>
             <div class="timeline">
                 <article class="timeline-card reveal detail-trigger" data-detail="formation-iut" tabindex="0" role="button">
-                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=70&w=1200" alt="Etudiants travaillant sur ordinateurs">
+                    <img src="assets/img/editorial/photo-1519389950473-47ba0277781c.jpg" alt="Etudiants travaillant sur ordinateurs">
                     <div>
                         <span class="date">Septembre 2025 - pr&eacute;sent</span>
                         <h3>BUT R&eacute;seaux et T&eacute;l&eacute;communications</h3>
@@ -170,7 +161,7 @@
                 </article>
 
                 <article class="timeline-card reveal detail-trigger" data-detail="formation-bac" tabindex="0" role="button">
-                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&q=70&w=1200" alt="Ecran affichant du code">
+                    <img src="assets/img/editorial/photo-1515879218367-8466d910aaa4.jpg" alt="Ecran affichant du code">
                     <div>
                         <span class="date">2024 - 2025</span>
                         <h3>Baccalaur&eacute;at G&eacute;n&eacute;ral</h3>
@@ -180,7 +171,7 @@
                 </article>
 
                 <article class="timeline-card reveal detail-trigger" data-detail="formation-outremer" tabindex="0" role="button">
-                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?auto=format&fit=crop&q=70&w=1200" alt="Paysage cotier en Nouvelle-Caledonie">
+                    <img src="assets/img/editorial/photo-1710881710127-b648ef0b4dc5.jpg" alt="Paysage cotier en Nouvelle-Caledonie">
                     <div>
                         <span class="date">2015 - 2024</span>
                         <h3>Scolarit&eacute; en Outre-mer</h3>
