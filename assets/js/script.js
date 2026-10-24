@@ -96,6 +96,25 @@ document.addEventListener("DOMContentLoaded", () => {
                 `)}
             `
         },
+        "skill-cyber": {
+            title: "Cybersécurité",
+            meta: "Kali Linux, Nmap, Metasploit, Burp Suite, Hydra, Wireshark",
+            body: `
+                <div class="panel-banner-pair"><img class="zoomable technical-capture" src="assets/img/dns/dnssec-dnsviz.png" alt="DNSViz montrant la chaîne d'authentification DNSSEC sécurisée du domaine .fr" loading="lazy"><img class="zoomable technical-capture" src="assets/img/kioptrix/kioptrix-10-shell-root-confirmation.png" alt="Capture du test Kioptrix en laboratoire" loading="lazy"></div>
+                ${accordion("Analyse et observation", `
+                    <p>Je développe des bases d'analyse réseau et de sécurité à travers des travaux pratiques encadrés. J'apprends à observer les services exposés, à lire les échanges dans Wireshark et à confronter les résultats aux hypothèses de départ.</p>
+                    <ul><li>Découverte et énumération avec Nmap.</li><li>Analyse de trafic et de protocoles avec Wireshark.</li><li>Notions de sécurité des services et des systèmes.</li></ul>
+                `)}
+                ${accordion("Tests en environnement isolé", `
+                    <p>Le TD Kioptrix m'a permis de travailler dans une machine volontairement vulnérable et un cadre de laboratoire. J'y ai étudié le service Samba, testé un scénario avec Metasploit et vérifié les privilèges obtenus, en distinguant les tentatives infructueuses du résultat confirmé.</p>
+                    <ul><li>Kali Linux et outils de test en TP.</li><li>Analyse d'un service SMB/Samba ancien.</li><li>Vérification des résultats et rédaction d'un compte rendu.</li></ul>
+                `)}
+                ${accordion("DNS et protection", `
+                    <p>Mes travaux portent aussi sur les échanges DNS, les principes de DNSSEC et les mécanismes d'empoisonnement de cache. Une simulation documentée a produit un fichier PCAP hors ligne : elle n'a pas envoyé de réponses falsifiées au serveur DNS, ce qui m'a appris à vérifier précisément la portée d'un test avant d'en tirer une conclusion.</p>
+                    <ul><li>Notions de DNSSEC et validation DNS.</li><li>Étude théorique du cache poisoning.</li><li>Lecture de traces DNS dans Wireshark.</li></ul>
+                `)}
+            `
+        },
         "skill-system": {
             title: "Systèmes",
             meta: "Linux, Windows, VirtualBox",
@@ -167,14 +186,22 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         "skill-tools": {
             title: "Outils",
-            meta: "Git, GitHub, Packet Tracer",
+            meta: "Git, Packet Tracer, Metasploit, Burp Suite, Hydra",
             body: `
-                <img class="panel-image zoomable technical-capture" src="assets/img/sae24/supervision-zabbix.png" alt="Supervision des hôtes du projet dans Zabbix" loading="lazy">
+                <h3>Captures des outils</h3>
+                <div class="project-captures">
+                    <figure><button class="project-capture-zoom" type="button" aria-label="Agrandir la capture Metasploit"><img src="assets/img/kioptrix/kioptrix-08-payloads-linux.png" alt="Liste des payloads Metasploit disponibles pour le module Samba" loading="lazy"></button><figcaption><strong>Metasploit.</strong> Capture des options proposées dans le TD Kioptrix.</figcaption></figure>
+                    <figure><button class="project-capture-zoom" type="button" aria-label="Agrandir la capture Hydra"><img src="assets/img/kioptrix/kioptrix-13-hydra-test-ssh.png" alt="Début d'un test Hydra sur le service SSH du laboratoire" loading="lazy"></button><figcaption><strong>Hydra.</strong> Début du test SSH; aucun succès n'est visible dans cet extrait.</figcaption></figure>
+                    <figure><button class="project-capture-zoom" type="button" aria-label="Agrandir la capture Burp Suite"><img src="assets/img/burp/intruder-results.png" alt="Résultats de Burp Suite Intruder sur un formulaire de test local" loading="lazy"></button><figcaption><strong>Burp Suite Intruder.</strong> Les résultats affichés ne confirment pas de connexion.</figcaption></figure>
+                </div>
                 ${accordion("Git et GitHub", `
                     <p>Je sais versionner un projet, suivre mes modifications et publier mon travail. GitHub est aussi un support pour présenter mes scripts, projets de formation et exercices techniques.</p>
                 `)}
                 ${accordion("Packet Tracer", `
                     <p>Packet Tracer me sert à simuler des topologies, vérifier des configurations et mieux comprendre la logique réseau avant de passer sur du matériel réel.</p>
+                `)}
+                ${accordion("Outils de cybersécurité en TP", `
+                    <p>J'ai découvert Metasploit, Burp Suite et Hydra lors de travaux pratiques en environnement de laboratoire. Je les utilise comme outils d'observation et de test encadré, en vérifiant les résultats plutôt qu'en assimilant un lancement d'outil à une réussite.</p>
                 `)}
                 ${accordion("Méthode", `
                     <p>Je cherche à documenter davantage mes projets : contexte, objectif, étapes, outils utilisés et résultat. C'est ce qui rend un projet étudiant plus lisible pour un recruteur technique.</p>
@@ -309,6 +336,91 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
                 <h4>Résultats et acquis</h4>
                 <p>Le compte rendu rassemble l'architecture, les configurations et les validations des services. Les captures montrent les hôtes ajoutés à Zabbix et la réception d'une alerte applicative dans Graylog. Ce projet met en relation l'administration réseau, les systèmes, le développement web et l'analyse des événements de sécurité.</p>
+            `
+        },
+        "project-kioptrix": {
+            title: "Kioptrix · Audit en laboratoire",
+            meta: "Cybersécurité · Kali Linux, Nmap, Metasploit, Hydra, Wireshark",
+            body: `
+                <h4>Contexte et cadre</h4>
+                <p>Travail pratique encadré sur Kioptrix, une machine volontairement vulnérable fournie pour l'apprentissage. Les manipulations sont réalisées dans le laboratoire du TD et ne concernent aucun système tiers.</p>
+                <h4>Reconnaissance et analyse</h4>
+                <ul>
+                    <li>Énumération des services puis identification de SMB/Samba sur le port 139.</li>
+                    <li>Relevé de la bannière Samba 2.2.1a et recherche de pistes adaptées avec Metasploit.</li>
+                    <li>Observation des échanges TCP/SMB et des tentatives dans Wireshark.</li>
+                </ul>
+                <h4>Tests et résultats</h4>
+                <p>Plusieurs premières tentatives trans2open ont échoué ou n'ont pas fourni de session stable. Une capture ultérieure confirme l'ouverture d'un shell dans le lab et la commande <code>id</code> retourne <code>uid=0(root)</code>. Le compte rendu conserve cette distinction afin de ne pas présenter les essais intermédiaires comme des réussites.</p>
+                <h4>Captures du TD Kioptrix</h4>
+                <div class="project-captures">
+                    <figure><button class="project-capture-zoom" type="button" aria-label="Agrandir la capture du module SMB"><img src="assets/img/kioptrix/kioptrix-01-module-smb-version.svg" alt="Sélection du module Metasploit pour identifier la version SMB" loading="lazy"></button><figcaption><strong>Préparation du scan SMB.</strong> Sélection du module auxiliaire de détection.</figcaption></figure>
+                    <figure><button class="project-capture-zoom" type="button" aria-label="Agrandir le résultat du scan SMB"><img src="assets/img/kioptrix/kioptrix-02.svg" alt="Résultat de détection du service Samba sur la machine Kioptrix" loading="lazy"></button><figcaption><strong>Identification du service.</strong> Le résultat du scan révèle la version Samba observée dans le laboratoire.</figcaption></figure>
+                    <figure><button class="project-capture-zoom" type="button" aria-label="Agrandir les pistes trans2open"><img src="assets/img/kioptrix/kioptrix-03.svg" alt="Résultats de recherche Metasploit pour trans2open" loading="lazy"></button><figcaption><strong>Recherche de pistes.</strong> Comparaison des modules disponibles avant les essais.</figcaption></figure>
+                    <figure><button class="project-capture-zoom" type="button" aria-label="Agrandir la liste des payloads"><img src="assets/img/kioptrix/kioptrix-08-payloads-linux.png" alt="Liste des payloads proposés par Metasploit pour le module Samba" loading="lazy"></button><figcaption><strong>Options disponibles.</strong> La liste aide à comparer les payloads compatibles; elle ne prouve pas leur réussite sur la cible.</figcaption></figure>
+                    <figure><button class="project-capture-zoom" type="button" aria-label="Agrandir la sélection du scanner SSH Metasploit"><img src="assets/img/kioptrix/kioptrix-14-metasploit-ssh-login-options.png" alt="Sélection du scanner SSH ssh_login dans Metasploit" loading="lazy"></button><figcaption><strong>Metasploit et SSH.</strong> Sélection du module de vérification SSH dans le cadre du TD.</figcaption></figure>
+                    <figure><button class="project-capture-zoom" type="button" aria-label="Agrandir la vérification du shell"><img src="assets/img/kioptrix/kioptrix-10-shell-root-confirmation.png" alt="Vérification des privilèges du shell dans la machine de laboratoire Kioptrix" loading="lazy"></button><figcaption><strong>Résultat confirmé dans le lab.</strong> La sortie de <code>id</code> affiche l'UID root.</figcaption></figure>
+                </div>
+                <h4>Hydra : test SSH</h4>
+                <p>La capture Hydra montre le démarrage d'un test sur le service SSH du laboratoire et quelques essais parmi les 1 021 prévus. Aucun succès n'est visible dans cet extrait : le résultat affiché ne permet donc pas de conclure qu'un accès a été obtenu avec Hydra.</p>
+                <div class="project-captures">
+                    <figure><button class="project-capture-zoom" type="button" aria-label="Agrandir la capture du test Hydra"><img src="assets/img/kioptrix/kioptrix-13-hydra-test-ssh.png" alt="Début du test Hydra sur le service SSH de la machine Kioptrix en laboratoire" loading="lazy"></button><figcaption><strong>Début des essais.</strong> La capture s'arrête avant tout résultat positif.</figcaption></figure>
+                </div>
+                <h4>Compétences mobilisées</h4>
+                <p>Préparer un environnement isolé, interpréter des résultats d'outils, examiner des paquets, vérifier une hypothèse et documenter clairement les limites d'une expérimentation.</p>
+            `
+        },
+        "project-dns": {
+            title: "DNS, DNSSEC et cache DNS",
+            meta: "Réseaux · Analyse et sécurité DNS",
+            body: `
+                <h4>Contexte</h4>
+                <p>Travail pratique distinct du TD Kioptrix, consacré au fonctionnement du DNS, à des notions de DNSSEC et à l'étude du cache DNS.</p>
+                <h4>Analyse DNS</h4>
+                <p>Les commandes <code>dig</code> servent à interroger le résolveur du TP et à examiner les réponses obtenues. Cette observation permet de comparer une réponse valide avec un nom inexistant et de lire les informations affichées par l'outil.</p>
+                <h4>DNSSEC et cache poisoning</h4>
+                <p>J'ai étudié le rôle de DNSSEC dans l'authentification des données DNS ainsi que le principe du cache poisoning. La capture de simulation présentée ici montre des réponses artificielles enregistrées dans un fichier PCAP local ; elles n'ont pas été envoyées à BIND9. Il s'agit donc d'une simulation et non d'un empoisonnement réussi du cache.</p>
+                <h4>Captures du TP DNS</h4>
+                <div class="project-captures">
+                    <figure><button class="project-capture-zoom" type="button" aria-label="Agrandir la vérification DNS"><img src="assets/img/dns/dns-verification.png" alt="Terminal montrant les vérifications DNS avec dig" loading="lazy"></button><figcaption><strong>Interrogation DNS.</strong> Vérification d'une réponse et d'un nom inexistant avec <code>dig</code>.</figcaption></figure>
+                    <figure><button class="project-capture-zoom" type="button" aria-label="Agrandir la simulation du cache DNS"><img src="assets/img/dns/dns-cache-simulation.png" alt="Sortie du TP montrant la génération locale d'un PCAP de simulation DNS" loading="lazy"></button><figcaption><strong>Simulation de cache DNS.</strong> Les réponses de test sont enregistrées dans un PCAP, sans envoi au serveur.</figcaption></figure>
+                </div>
+                <h4>Acquis</h4>
+                <p>Ce TP m'a appris à distinguer l'analyse de réponses DNS, une simulation hors réseau et une attaque réellement exécutée, ainsi qu'à vérifier les conclusions à partir des traces disponibles.</p>
+            `
+        },
+        "project-burp": {
+            title: "Burp Suite · Intruder",
+            meta: "Cybersécurité · Analyse d'un formulaire de test",
+            body: `
+                <h4>Contexte</h4>
+                <p>Exercice distinct du TD Kioptrix et du TP DNS, consacré à la prise en main de Burp Suite Intruder sur une cible affichée comme locale (<code>localhost:80</code>).</p>
+                <h4>Travail réalisé</h4>
+                <p>La capture montre les résultats d'une série de requêtes utilisant des valeurs de test pour deux champs. Elle sert à repérer et comparer les réponses du formulaire dans l'interface Burp Suite.</p>
+                <h4>Résultat visible</h4>
+                <p>Les codes affichés sont à <code>0</code> et aucune réponse HTTP exploitable n'est visible dans le tableau. Cette capture ne démontre donc pas une authentification réussie ni la validation d'identifiants.</p>
+                <h4>Capture Burp Suite</h4>
+                <div class="project-captures">
+                    <figure><button class="project-capture-zoom" type="button" aria-label="Agrandir les résultats Burp Suite Intruder"><img src="assets/img/burp/intruder-results.png" alt="Tableau des résultats Burp Suite Intruder pour une cible locale" loading="lazy"></button><figcaption><strong>Résultats Intruder.</strong> Les réponses affichées ne confirment aucune connexion réussie.</figcaption></figure>
+                </div>
+            `
+        },
+        "project-cvss": {
+            title: "Calculateur de criticité CVSS",
+            meta: "Cybersécurité · Excel · CVSS 3.0 et 3.1",
+            body: `
+                <h4>Contexte</h4>
+                <p>J'ai conçu un classeur Excel pour structurer l'évaluation de la criticité d'une vulnérabilité à partir des métriques CVSS. L'outil propose les versions 3.0 et 3.1 et rassemble les critères utiles dans une feuille de calcul guidée.</p>
+                <h4>Fonctionnement</h4>
+                <p>Les listes de choix permettent de renseigner les métriques de base, temporelles, les besoins de sécurité et les métriques environnementales modifiées. Une feuille d'aide rappelle la signification des critères et les coefficients associés. Les formules calculent les scores et leur niveau de criticité au fil des sélections.</p>
+                <p>Le classeur affiche séparément le score de base, le score temporel et le score environnemental, avec le détail des étapes intermédiaires. Cela facilite la comparaison d'une évaluation générique avec un contexte d'utilisation particulier.</p>
+                <h4>Aperçu du calculateur</h4>
+                <div class="project-captures">
+                    <figure><button class="project-capture-zoom" type="button" aria-label="Agrandir la capture du calculateur CVSS"><img src="assets/img/cvss/cvss-calculator.png" alt="Feuille Excel du calculateur CVSS montrant les critères, coefficients et scores calculés" loading="lazy"></button><figcaption><strong>Vue de la feuille de calcul.</strong> Les scores affichés correspondent aux valeurs d'exemple présentes dans le classeur, et non à l'analyse d'une vulnérabilité réelle.</figcaption></figure>
+                </div>
+                <h4>Fichier Excel</h4>
+                <p>Le classeur peut être ouvert et adapté pour saisir les métriques d'un cas étudié. Les résultats dépendent des choix renseignés et doivent être interprétés avec le contexte de la vulnérabilité.</p>
+                <p><a class="btn" href="assets/files/Calculateur_criticite_CVSS.xlsx" download>Télécharger le calculateur Excel</a></p>
             `
         },
         "project-sae23": {

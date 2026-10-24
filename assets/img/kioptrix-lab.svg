@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Laboratoire de cybersécurité</title>
+  <desc id="desc">Schéma de laboratoire isolé avec poste Kali, cible Kioptrix et étapes d'analyse</desc>
+  <rect width="960" height="600" fill="#07101d"/>
+  <path d="M0 120h960M0 480h960M80 0v600M880 0v600" stroke="#20334a" stroke-width="2"/>
+  <rect x="64" y="58" width="832" height="484" rx="12" fill="#0d1929" stroke="#30445c" stroke-width="2"/>
+  <rect x="94" y="88" width="772" height="54" rx="6" fill="#121f31"/>
+  <circle cx="120" cy="115" r="7" fill="#ff7168"/><circle cx="144" cy="115" r="7" fill="#ffca67"/><circle cx="168" cy="115" r="7" fill="#68d7a6"/>
+  <text x="202" y="122" fill="#a7bbd2" font-family="Consolas,monospace" font-size="18">LAB / ENVIRONNEMENT ISOLE</text>
+  <rect x="104" y="192" width="268" height="154" rx="8" fill="#13243a" stroke="#4ea1ff" stroke-width="2"/>
+  <path d="M166 238h144v77H166zM180 331h116" fill="none" stroke="#8fc4ff" stroke-width="5" stroke-linecap="round"/>
+  <text x="238" y="220" text-anchor="middle" fill="#f5f8fc" font-family="Arial,sans-serif" font-size="22" font-weight="700">KALI LINUX</text>
+  <text x="238" y="374" text-anchor="middle" fill="#9dadc3" font-family="Arial,sans-serif" font-size="17">poste d'analyse</text>
+  <rect x="588" y="192" width="248" height="154" rx="8" fill="#17251f" stroke="#68d7a6" stroke-width="2"/>
+  <path d="M675 238h74v76h-74zM663 238h98M688 258h48m-48 18h48m-48 18h35" fill="none" stroke="#8de0b8" stroke-width="4" stroke-linecap="round"/>
+  <text x="712" y="220" text-anchor="middle" fill="#f5f8fc" font-family="Arial,sans-serif" font-size="22" font-weight="700">KIOPTRIX</text>
+  <text x="712" y="374" text-anchor="middle" fill="#9dadc3" font-family="Arial,sans-serif" font-size="17">cible de TP</text>
+  <path d="M374 270h208" stroke="#ffca67" stroke-width="3" stroke-dasharray="9 9"/>
+  <path d="m565 259 18 11-18 11" fill="none" stroke="#ffca67" stroke-width="3"/>
+  <text x="478" y="250" text-anchor="middle" fill="#ffca67" font-family="Consolas,monospace" font-size="15">SMB · 139</text>
+  <g font-family="Arial,sans-serif" font-size="16" font-weight="700" text-anchor="middle">
+    <rect x="104" y="432" width="218" height="54" rx="6" fill="#17263a"/><text x="213" y="466" fill="#b6d8ff">1 · Observer</text>
+    <rect x="371" y="432" width="218" height="54" rx="6" fill="#17263a"/><text x="480" y="466" fill="#b6d8ff">2 · Analyser</text>
+    <rect x="638" y="432" width="198" height="54" rx="6" fill="#17263a"/><text x="737" y="466" fill="#b6d8ff">3 · Vérifier</text>
+  </g>
+  <text x="480" y="516" text-anchor="middle" fill="#7489a2" font-family="Consolas,monospace" font-size="13">EXERCICE PEDAGOGIQUE AUTORISE</text>
+</svg>
