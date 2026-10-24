@@ -202,6 +202,19 @@ body.nav-open .mobile-nav { display: flex; }
 .project-capture-zoom img { display: block; width: 100%; height: auto; }
 .project-capture-zoom:focus-visible { outline: 2px solid var(--blue-soft); outline-offset: 4px; }
 .project-captures figcaption { margin-top: 10px; color: var(--soft); font-size: .9rem; line-height: 1.6; }
+.capture-gallery { min-width: 0; margin: 18px 0 26px; }
+.project-captures.capture-track { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-x: contain; }
+.project-captures.capture-track::-webkit-scrollbar, .capture-gallery-menu::-webkit-scrollbar { display: none; }
+.project-captures.capture-track figure { flex: 0 0 100%; scroll-snap-align: start; }
+.project-captures.capture-track .project-capture-zoom img { width: 100%; height: clamp(220px, 42vh, 420px); object-fit: contain; background: #101822; }
+.capture-gallery-controls { display: flex; justify-content: center; align-items: center; gap: 18px; margin-top: 14px; }
+.capture-gallery-arrow { display: grid; place-items: center; width: 38px; height: 38px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--text); cursor: pointer; }
+.capture-gallery-arrow:disabled { opacity: .4; cursor: default; }
+.capture-gallery-arrow:focus-visible, .capture-gallery-menu button:focus-visible { outline: 2px solid var(--blue-soft); outline-offset: 3px; }
+.capture-gallery-status { min-width: 52px; color: var(--muted); font-size: .85rem; text-align: center; font-variant-numeric: tabular-nums; }
+.capture-gallery-menu { display: flex; gap: 6px; overflow-x: auto; margin-top: 10px; padding: 0 0 8px; scrollbar-width: none; }
+.capture-gallery-menu button { flex: 0 0 auto; padding: 8px 10px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: var(--muted); text-align: left; cursor: pointer; white-space: nowrap; }
+.capture-gallery-menu button[aria-current="true"] { border-bottom-color: var(--blue); color: var(--text); }
 .accordion-item { margin-top: 14px; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: rgba(255,255,255,.03); }
 .accordion-header { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 16px; border: 0; background: transparent; color: var(--text); cursor: pointer; font-weight: 750; text-align: left; }
 .accordion-header i { color: var(--blue-soft); transition: transform 180ms ease; }

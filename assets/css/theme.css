@@ -102,12 +102,7 @@ a, button, [role="button"] { -webkit-tap-highlight-color: transparent; }
 .skill-card:hover, .project-card:hover, .image-tile:hover, .destination-card:hover { box-shadow: var(--shadow); border-color: #8aab97; transform: translateY(-3px); }
 .skill-card { min-height: 0; padding: 0 24px 26px; }
 .skill-card img { width: calc(100% + 48px); margin: 0 -24px 24px; height: 180px; }
-.skill-card .skill-banner-pair { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 4px; width: calc(100% + 48px); height: 180px; margin: 0 -24px 24px; overflow: hidden; border-bottom: 1px solid var(--line); }
-.skill-card .skill-banner-pair img { width: 100%; height: 180px; margin: 0; object-fit: cover; }
-.skill-card .tool-image-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 4px; width: calc(100% + 48px); height: 180px; margin: 0 -24px 24px; overflow: hidden; border-bottom: 1px solid var(--line); background: #0b111b; }
-.skill-card .tool-image-grid figure { display: grid; grid-template-rows: 144px 35px; min-width: 0; margin: 0; background: #111b29; }
-.skill-card .tool-image-grid img { width: 100%; height: 144px; margin: 0; object-fit: cover; }
-.skill-card .tool-image-grid figcaption { display: grid; place-items: center; min-width: 0; padding: 3px; color: var(--soft); font-size: .68rem; line-height: 1.2; text-align: center; }
+.skill-card[data-detail="skill-cyber"], .skill-card[data-detail="skill-tools"] { padding-top: 24px; }
 .skill-card h3 { font-size: 21px; font-weight: 650; }
 .skill-card .skill-list li::before { content: ""; display: inline-block; width: 4px; height: 4px; margin-right: 9px; vertical-align: middle; background: var(--blue); }
 .project-card { min-height: 0; }

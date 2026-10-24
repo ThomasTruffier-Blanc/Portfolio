@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Cybersécurité",
             meta: "Kali Linux, Nmap, Metasploit, Burp Suite, Hydra, Wireshark",
             body: `
-                <div class="panel-banner-pair"><img class="zoomable technical-capture" src="assets/img/dns/dnssec-dnsviz.png" alt="DNSViz montrant la chaîne d'authentification DNSSEC sécurisée du domaine .fr" loading="lazy"><img class="zoomable technical-capture" src="assets/img/kioptrix/kioptrix-10-shell-root-confirmation.png" alt="Capture du test Kioptrix en laboratoire" loading="lazy"></div>
+                <p>Cette rubrique rassemble des apprentissages différents : l'observation et la protection des échanges DNS, puis des essais encadrés sur une machine de laboratoire volontairement vulnérable. Les captures ci-dessous sont replacées dans leur contexte et ne représentent pas un même exercice.</p>
                 ${accordion("Analyse et observation", `
                     <p>Je développe des bases d'analyse réseau et de sécurité à travers des travaux pratiques encadrés. J'apprends à observer les services exposés, à lire les échanges dans Wireshark et à confronter les résultats aux hypothèses de départ.</p>
                     <ul><li>Découverte et énumération avec Nmap.</li><li>Analyse de trafic et de protocoles avec Wireshark.</li><li>Notions de sécurité des services et des systèmes.</li></ul>
@@ -113,6 +113,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     <p>Mes travaux portent aussi sur les échanges DNS, les principes de DNSSEC et les mécanismes d'empoisonnement de cache. Une simulation documentée a produit un fichier PCAP hors ligne : elle n'a pas envoyé de réponses falsifiées au serveur DNS, ce qui m'a appris à vérifier précisément la portée d'un test avant d'en tirer une conclusion.</p>
                     <ul><li>Notions de DNSSEC et validation DNS.</li><li>Étude théorique du cache poisoning.</li><li>Lecture de traces DNS dans Wireshark.</li></ul>
                 `)}
+                <h3>Captures des travaux pratiques</h3>
+                <p>Fais défiler les captures pour distinguer la validation DNSSEC du test Kioptrix en environnement isolé.</p>
+                <div class="project-captures">
+                    <figure><button class="project-capture-zoom" type="button" aria-label="Agrandir la capture DNSSEC"><img src="assets/img/dns/dnssec-dnsviz.png" alt="DNSViz montrant la chaîne d'authentification DNSSEC sécurisée du domaine .fr" loading="lazy"></button><figcaption><strong>DNSSEC · validation.</strong> DNSViz visualise la chaîne d'authentification sécurisée du domaine .fr.</figcaption></figure>
+                    <figure><button class="project-capture-zoom" type="button" aria-label="Agrandir le résultat Kioptrix"><img src="assets/img/kioptrix/kioptrix-10-shell-root-confirmation.png" alt="Vérification des privilèges du shell dans la machine de laboratoire Kioptrix" loading="lazy"></button><figcaption><strong>Kioptrix · laboratoire.</strong> Vérification du résultat dans la machine volontairement vulnérable du TD.</figcaption></figure>
+                </div>
             `
         },
         "skill-system": {
@@ -188,12 +194,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Outils",
             meta: "Git, Packet Tracer, Metasploit, Burp Suite, Hydra",
             body: `
-                <h3>Captures des outils</h3>
-                <div class="project-captures">
-                    <figure><button class="project-capture-zoom" type="button" aria-label="Agrandir la capture Metasploit"><img src="assets/img/kioptrix/kioptrix-08-payloads-linux.png" alt="Liste des payloads Metasploit disponibles pour le module Samba" loading="lazy"></button><figcaption><strong>Metasploit.</strong> Capture des options proposées dans le TD Kioptrix.</figcaption></figure>
-                    <figure><button class="project-capture-zoom" type="button" aria-label="Agrandir la capture Hydra"><img src="assets/img/kioptrix/kioptrix-13-hydra-test-ssh.png" alt="Début d'un test Hydra sur le service SSH du laboratoire" loading="lazy"></button><figcaption><strong>Hydra.</strong> Début du test SSH; aucun succès n'est visible dans cet extrait.</figcaption></figure>
-                    <figure><button class="project-capture-zoom" type="button" aria-label="Agrandir la capture Burp Suite"><img src="assets/img/burp/intruder-results.png" alt="Résultats de Burp Suite Intruder sur un formulaire de test local" loading="lazy"></button><figcaption><strong>Burp Suite Intruder.</strong> Les résultats affichés ne confirment pas de connexion.</figcaption></figure>
-                </div>
+                <p>J'utilise ces outils dans des contextes différents : Git pour suivre les versions, Packet Tracer pour les topologies et les outils de cybersécurité pour des travaux pratiques encadrés. Chaque capture est accompagnée de ce qu'elle montre réellement.</p>
                 ${accordion("Git et GitHub", `
                     <p>Je sais versionner un projet, suivre mes modifications et publier mon travail. GitHub est aussi un support pour présenter mes scripts, projets de formation et exercices techniques.</p>
                 `)}
@@ -203,6 +204,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 ${accordion("Outils de cybersécurité en TP", `
                     <p>J'ai découvert Metasploit, Burp Suite et Hydra lors de travaux pratiques en environnement de laboratoire. Je les utilise comme outils d'observation et de test encadré, en vérifiant les résultats plutôt qu'en assimilant un lancement d'outil à une réussite.</p>
                 `)}
+                <h3>Captures des outils</h3>
+                <p>Les images défilent dans leur ordre de présentation. Hydra montre le début d'un test sans succès confirmé ; Burp affiche les réponses d'un formulaire local.</p>
+                <div class="project-captures">
+                    <figure><button class="project-capture-zoom" type="button" aria-label="Agrandir la capture Metasploit"><img src="assets/img/kioptrix/kioptrix-08-payloads-linux.png" alt="Liste des payloads Metasploit disponibles pour le module Samba" loading="lazy"></button><figcaption><strong>Metasploit.</strong> Capture des options proposées dans le TD Kioptrix.</figcaption></figure>
+                    <figure><button class="project-capture-zoom" type="button" aria-label="Agrandir la capture Hydra"><img src="assets/img/kioptrix/kioptrix-13-hydra-test-ssh.png" alt="Début d'un test Hydra sur le service SSH du laboratoire" loading="lazy"></button><figcaption><strong>Hydra.</strong> Début du test SSH; aucun succès n'est visible dans cet extrait.</figcaption></figure>
+                    <figure><button class="project-capture-zoom" type="button" aria-label="Agrandir la capture Burp Suite"><img src="assets/img/burp/intruder-results.png" alt="Résultats de Burp Suite Intruder sur un formulaire de test local" loading="lazy"></button><figcaption><strong>Burp Suite Intruder.</strong> Les résultats affichés ne confirment pas de connexion.</figcaption></figure>
+                </div>
                 ${accordion("Méthode", `
                     <p>Je cherche à documenter davantage mes projets : contexte, objectif, étapes, outils utilisés et résultat. C'est ce qui rend un projet étudiant plus lisible pour un recruteur technique.</p>
                 `)}
@@ -533,11 +541,86 @@ document.addEventListener("DOMContentLoaded", () => {
         panelLocation.textContent = data.location || "";
         panelLocation.style.display = data.location ? "block" : "none";
         panelBody.innerHTML = data.body || "";
+        initializeCaptureGalleries();
 
         sidePanel.classList.add("active");
         sidePanel.setAttribute("aria-hidden", "false");
         overlay.classList.add("active");
         document.body.style.overflow = "hidden";
+    }
+
+    function initializeCaptureGalleries() {
+        panelBody.querySelectorAll(".project-captures").forEach((track) => {
+            const figures = Array.from(track.querySelectorAll(":scope > figure"));
+            if (figures.length < 2) return;
+
+            const gallery = document.createElement("section");
+            gallery.className = "capture-gallery";
+            gallery.setAttribute("role", "region");
+            gallery.setAttribute("aria-label", "Galerie de captures");
+            track.parentNode.insertBefore(gallery, track);
+            gallery.appendChild(track);
+            track.classList.add("capture-track");
+            track.setAttribute("tabindex", "0");
+            track.setAttribute("aria-label", "Captures défilantes");
+
+            const controls = document.createElement("div");
+            controls.className = "capture-gallery-controls";
+            const previous = document.createElement("button");
+            previous.type = "button";
+            previous.className = "capture-gallery-arrow";
+            previous.setAttribute("aria-label", "Capture précédente");
+            previous.title = "Capture précédente";
+            previous.innerHTML = '<i class="fa-solid fa-arrow-left" aria-hidden="true"></i>';
+            const status = document.createElement("span");
+            status.className = "capture-gallery-status";
+            status.setAttribute("aria-live", "polite");
+            const next = document.createElement("button");
+            next.type = "button";
+            next.className = "capture-gallery-arrow";
+            next.setAttribute("aria-label", "Capture suivante");
+            next.title = "Capture suivante";
+            next.innerHTML = '<i class="fa-solid fa-arrow-right" aria-hidden="true"></i>';
+            controls.append(previous, status, next);
+
+            const menu = document.createElement("nav");
+            menu.className = "capture-gallery-menu";
+            menu.setAttribute("aria-label", "Choisir une capture");
+            const menuButtons = figures.map((figure, index) => {
+                const button = document.createElement("button");
+                button.type = "button";
+                button.textContent = figure.querySelector("figcaption strong")?.textContent.trim() || `Capture ${index + 1}`;
+                button.addEventListener("click", () => showSlide(index));
+                menu.appendChild(button);
+                return button;
+            });
+
+            let activeIndex = 0;
+            function showSlide(index) {
+                activeIndex = Math.max(0, Math.min(index, figures.length - 1));
+                track.scrollTo({ left: activeIndex * track.clientWidth, behavior: "smooth" });
+                updateControls();
+            }
+            function updateControls() {
+                status.textContent = `${activeIndex + 1} / ${figures.length}`;
+                previous.disabled = activeIndex === 0;
+                next.disabled = activeIndex === figures.length - 1;
+                menuButtons.forEach((button, index) => {
+                    if (index === activeIndex) button.setAttribute("aria-current", "true");
+                    else button.removeAttribute("aria-current");
+                });
+            }
+            previous.addEventListener("click", () => showSlide(activeIndex - 1));
+            next.addEventListener("click", () => showSlide(activeIndex + 1));
+            track.addEventListener("scroll", () => {
+                window.requestAnimationFrame(() => {
+                    activeIndex = Math.max(0, Math.min(figures.length - 1, Math.round(track.scrollLeft / Math.max(track.clientWidth, 1))));
+                    updateControls();
+                });
+            }, { passive: true });
+            gallery.append(controls, menu);
+            updateControls();
+        });
     }
 
     function closePanel() {
