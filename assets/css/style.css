@@ -215,6 +215,14 @@ body.nav-open .mobile-nav { display: flex; }
 .capture-gallery-menu { display: flex; gap: 6px; overflow-x: auto; margin-top: 10px; padding: 0 0 8px; scrollbar-width: none; }
 .capture-gallery-menu button { flex: 0 0 auto; padding: 8px 10px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: var(--muted); text-align: left; cursor: pointer; white-space: nowrap; }
 .capture-gallery-menu button[aria-current="true"] { border-bottom-color: var(--blue); color: var(--text); }
+.panel-body .calculator-download { display: flex; align-items: center; gap: 13px; width: 100%; min-height: 70px; padding: 12px 15px; border: 1px solid #2b8767; border-radius: 6px; background: #176b4e; color: #fff; text-decoration: none; transition: background 160ms ease, border-color 160ms ease, transform 160ms ease; }
+.panel-body .calculator-download:hover { transform: translateY(-1px); border-color: #42a47d; background: #10523b; }
+.calculator-download-icon { display: grid; place-items: center; flex: 0 0 42px; height: 42px; border-radius: 5px; background: rgba(255,255,255,.13); font-size: 1.35rem; }
+.calculator-download-copy { display: grid; gap: 4px; line-height: 1.2; }
+.calculator-download-copy strong { color: #fff; font-size: .98rem; }
+.calculator-download-copy small { color: rgba(255,255,255,.8); font-size: .8rem; }
+.calculator-download-arrow { margin-left: auto; font-size: 1.1rem; }
+.panel-body .calculator-download:focus-visible { outline: 2px solid #75d2ac; outline-offset: 3px; }
 .accordion-item { margin-top: 14px; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: rgba(255,255,255,.03); }
 .accordion-header { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 16px; border: 0; background: transparent; color: var(--text); cursor: pointer; font-weight: 750; text-align: left; }
 .accordion-header i { color: var(--blue-soft); transition: transform 180ms ease; }

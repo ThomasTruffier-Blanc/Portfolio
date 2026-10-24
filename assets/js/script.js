@@ -408,8 +408,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 <h4>Résultat visible</h4>
                 <p>Les codes affichés sont à <code>0</code> et aucune réponse HTTP exploitable n'est visible dans le tableau. Cette capture ne démontre donc pas une authentification réussie ni la validation d'identifiants.</p>
                 <h4>Capture Burp Suite</h4>
+                <p>La capture supplémentaire issue de la fin du compte rendu montre le panneau de configuration d'une liste de test. Le cadrage se limite à ce panneau ; il ne s'agit pas d'un résultat d'authentification.</p>
                 <div class="project-captures">
                     <figure><button class="project-capture-zoom" type="button" aria-label="Agrandir les résultats Burp Suite Intruder"><img src="assets/img/burp/intruder-results.png" alt="Tableau des résultats Burp Suite Intruder pour une cible locale" loading="lazy"></button><figcaption><strong>Résultats Intruder.</strong> Les réponses affichées ne confirment aucune connexion réussie.</figcaption></figure>
+                    <figure><button class="project-capture-zoom" type="button" aria-label="Agrandir la liste de payloads Burp"><img src="assets/img/burp/burp-payloads-crop.png" alt="Panneau Burp Suite présentant une liste de six payloads de test" loading="lazy"></button><figcaption><strong>Liste de payloads.</strong> Une liste de six valeurs est configurée pour la deuxième position ; cette vue ne prouve pas qu'une requête a abouti.</figcaption></figure>
                 </div>
             `
         },
@@ -428,7 +430,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
                 <h4>Fichier Excel</h4>
                 <p>Le classeur peut être ouvert et adapté pour saisir les métriques d'un cas étudié. Les résultats dépendent des choix renseignés et doivent être interprétés avec le contexte de la vulnérabilité.</p>
-                <p><a class="btn" href="assets/files/Calculateur_criticite_CVSS.xlsx" download>Télécharger le calculateur Excel</a></p>
+                <p><a class="calculator-download" href="assets/files/Calculateur_criticite_CVSS.xlsx" download><span class="calculator-download-icon"><i class="fa-solid fa-file-excel" aria-hidden="true"></i></span><span class="calculator-download-copy"><strong>Télécharger le calculateur</strong><small>Classeur Excel · .xlsx</small></span><i class="fa-solid fa-arrow-down-to-line calculator-download-arrow" aria-hidden="true"></i></a></p>
             `
         },
         "project-sae23": {
